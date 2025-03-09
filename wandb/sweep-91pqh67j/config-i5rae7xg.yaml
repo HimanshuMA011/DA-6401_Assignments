@@ -1,0 +1,20 @@
+wandb_version: 1
+
+activation:
+  value: SIGMOID
+batch_size:
+  value: 64
+initializer:
+  value: RANDOM
+learning_rate:
+  value: 0.001
+max_epochs:
+  value: 10
+num_hidden_neurons:
+  value: 64
+num_layers:
+  value: 5
+optimizer:
+  value: SGD
+weight_decay:
+  value: 0
