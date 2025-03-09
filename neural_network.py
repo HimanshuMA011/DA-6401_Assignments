@@ -251,7 +251,7 @@ class FeedForwardNeuralNetwork:
             LOSS = []
 
             
-            deltaw = [
+            dltaW = [
                 np.zeros((self.layers[l + 1], self.layers[l]))
                 for l in range(0, len(self.layers) - 1)
             ]
@@ -270,7 +270,7 @@ class FeedForwardNeuralNetwork:
                 dWeights, dBiases = self.backPropagate(
                     Y, H, A, train_out[:, i].reshape(self.num_classes, 1)
                 )
-                deltaw = [
+                dltaW = [
                     dWeights[no_of_layers - 2 - i] for i in range(no_of_layers - 1)
                 ]
                 deltab = [
@@ -294,7 +294,7 @@ class FeedForwardNeuralNetwork:
 
                 
                 self.weights = {
-                    str(i + 1): (self.weights[str(i + 1)] - learning_rate * deltaw[i])
+                    str(i + 1): (self.weights[str(i + 1)] - learning_rate * dltaW[i])
                     for i in range(len(self.weights))
                 }
                 self.biases = {
@@ -350,7 +350,7 @@ class FeedForwardNeuralNetwork:
             LOSS = []
             #Y_pred = []
             
-            deltaw = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+            dltaW = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
             deltab = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
 
             for i in range(data_length):
@@ -358,7 +358,7 @@ class FeedForwardNeuralNetwork:
                 Y,H,A = self.forwardPropagate(train_In[:,i].reshape(self.img_flattened_size,1), self.weights, self.biases) 
                 dWeights, dBiases = self.backPropagate(Y,H,A,train_out[:,i].reshape(self.num_classes,1))
                 
-                deltaw = [dWeights[no_of_layers-2 - i] + deltaw[i] for i in range(no_of_layers - 1)]
+                dltaW = [dWeights[no_of_layers-2 - i] + dltaW[i] for i in range(no_of_layers - 1)]
                 deltab = [dBiases[no_of_layers-2 - i] + deltab[i] for i in range(no_of_layers - 1)]
                 
                 if self.loss_function == "MSE":
@@ -379,11 +379,11 @@ class FeedForwardNeuralNetwork:
                 if int(num_to_update) % batch_size == 0:
                     
                     
-                    self.weights = {str(i+1):(self.weights[str(i+1)] - learning_rate*deltaw[i]/batch_size) for i in range(len(self.weights))} 
+                    self.weights = {str(i+1):(self.weights[str(i+1)] - learning_rate*dltaW[i]/batch_size) for i in range(len(self.weights))} 
                     self.biases = {str(i+1):(self.biases[str(i+1)] - learning_rate*deltab[i]) for i in range(len(self.biases))}
                     
                     #resetting gradient updates
-                    deltaw = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+                    dltaW = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
                     deltab = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
             
             elapsed = time.time() - start_time
@@ -411,4 +411,505 @@ class FeedForwardNeuralNetwork:
 
 
 
+    def mgd(self, epochs,data_length, batch_size, learning_rate, weight_decay = 0):
+        Beta = 0.9
+
+        train_In = self.train_In[:, :data_length]
+        train_out = self.train_out[:, :data_length]       
+
+        
+        training_loss = []
+        training_accuracy = []
+        validation_accuracy = []
+        
+        no_of_layers = len(self.layers)
+        prev_v_w = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+        prev_v_b = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+        num_to_update = 0
+        for epoch in range(epochs):
+            start_time = time.time()
+            idx = np.random.shuffle(np.arange(data_length))
+            train_In = train_In[:, idx].reshape(self.img_flattened_size, data_length)
+            train_out = train_out[:, idx].reshape(self.num_classes, data_length)
+
+            LOSS = []
+
+            dltaW = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+            deltab = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+            
+
+            for i in range(data_length):
+                Y,H,A = self.forwardPropagate(self.train_In[:,i].reshape(self.img_flattened_size,1), self.weights, self.biases) 
+                dWeights, dBiases = self.backPropagate(Y,H,A,self.train_out[:,i].reshape(self.num_classes,1))
+                
+                dltaW = [dWeights[no_of_layers-2 - i] + dltaW[i] for i in range(no_of_layers - 1)]
+                deltab = [dBiases[no_of_layers-2 - i] + deltab[i] for i in range(no_of_layers - 1)]
+
+                if self.loss_function == "MSE":
+                    LOSS.append(self.meanSquaredErrorLoss(
+                            self.train_out[:, i].reshape(self.num_classes, 1), Y
+                        )
+                        + self.L2_reg_loss(weight_decay)
+                        )
+                elif self.loss_function == "CROSS":
+                    LOSS.append(
+                        self.crossEntropyLoss(
+                            self.train_out[:, i].reshape(self.num_classes, 1), Y
+                        )
+                        + self.L2_reg_loss(weight_decay)
+                    )
+                num_to_update +=1
+                
+                if int(num_to_update) % batch_size == 0:
+
+                    v_w = [Beta*prev_v_w[i] + learning_rate*dltaW[i]/batch_size for i in range(no_of_layers - 1)]
+                    v_b = [Beta*prev_v_b[i] + learning_rate*deltab[i]/batch_size for i in range(no_of_layers - 1)]
+                    
+                    self.weights = {str(i+1) : (self.weights[str(i+1)] - v_w[i]) for i in range(len(self.weights))}
+                    self.biases = {str(i+1): (self.biases[str(i+1)] - v_b[i]) for i in range(len(self.biases))}
+
+                    prev_v_w = v_w
+                    prev_v_b = v_b
+
+                    #resetting gradient updates
+                    dltaW = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+                    deltab = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+
+            elapsed = time.time() - start_time
+            #Y_pred = np.array(Y_pred).transpose()
+            Y_pred = self.predict(self.train_In, self.N_train)
+            training_loss.append(np.mean(LOSS))
+            training_accuracy.append(self.accuracy(train_out, Y_pred, data_length)[0])
+            validation_accuracy.append(self.accuracy(self.val_out, self.predict(self.X_val_In, self.N_val), self.N_val)[0])
+
+            print(
+                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
+                        % (
+                            epoch,
+                            training_loss[epoch],
+                            training_accuracy[epoch],
+                            validation_accuracy[epoch],
+                            elapsed,
+                            self.learning_rate,
+                        )
+                    )
+
+            wandb.log({'loss':np.mean(LOSS), 'training_accuracy':training_accuracy[epoch], 'validation_accuracy':validation_accuracy[epoch],'epoch':epoch })
+
+
+        return training_loss, training_accuracy, validation_accuracy, Y_pred
+
     
+
+    def nag(self,epochs,data_length, batch_size,learning_rate, weight_decay = 0):
+        Beta = 0.9
+
+        train_In = self.train_In[:, :data_length]
+        train_out = self.train_out[:, :data_length]        
+
+
+        training_loss = []
+        training_accuracy = []
+        validation_accuracy = []
+        
+        no_of_layers = len(self.layers)
+        
+        prev_v_w = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+        prev_v_b = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+        
+        num_to_update = 0
+        for epoch in range(epochs):
+            start_time = time.time()
+            idx = np.random.shuffle(np.arange(data_length))
+            train_In = train_In[:, idx].reshape(self.img_flattened_size, data_length)
+            train_out = train_out[:, idx].reshape(self.num_classes, data_length)
+
+            LOSS = []
+            #Y_pred = []  
+            
+            dltaW = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+            deltab = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+            
+            v_w = [Beta*prev_v_w[i] for i in range(0, len(self.layers)-1)]  
+            v_b = [Beta*prev_v_b[i] for i in range(0, len(self.layers)-1)]
+
+            for i in range(data_length):
+                winter = {str(i+1) : self.weights[str(i+1)] - v_w[i] for i in range(0, len(self.layers)-1)}
+                binter = {str(i+1) : self.biases[str(i+1)] - v_b[i] for i in range(0, len(self.layers)-1)}
+                
+                Y,H,A = self.forwardPropagate(self.train_In[:,i].reshape(self.img_flattened_size,1), winter, binter) 
+                dWeights, dBiases = self.backPropagate(Y,H,A,self.train_out[:,i].reshape(self.num_classes,1))
+                
+                dltaW = [dWeights[no_of_layers-2 - i] + dltaW[i] for i in range(no_of_layers - 1)]
+                deltab = [dBiases[no_of_layers-2 - i] + deltab[i] for i in range(no_of_layers - 1)]
+
+                #Y_pred.append(Y.reshape(self.num_classes,))
+                if self.loss_function == "MSE":
+                    LOSS.append(self.meanSquaredErrorLoss(
+                            self.train_out[:, i].reshape(self.num_classes, 1), Y
+                        )
+                        + self.L2_reg_loss(weight_decay)
+                        )
+                elif self.loss_function == "CROSS":
+                    LOSS.append(
+                        self.crossEntropyLoss(
+                            self.train_out[:, i].reshape(self.num_classes, 1), Y
+                        )
+                        + self.L2_reg_loss(weight_decay)
+                    )
+
+                
+                num_to_update +=1
+                
+                if int(num_to_update) % batch_size == 0:                            
+
+                    v_w = [Beta*prev_v_w[i] + learning_rate*dltaW[i]/batch_size for i in range(no_of_layers - 1)]
+                    v_b = [Beta*prev_v_b[i] + learning_rate*deltab[i]/batch_size for i in range(no_of_layers - 1)]
+        
+                    self.weights ={str(i+1):self.weights[str(i+1)]  - v_w[i] for i in range(len(self.weights))}
+                    self.biases = {str(i+1):self.biases[str(i+1)]  - v_b[i] for i in range(len(self.biases))}
+                
+                    prev_v_w = v_w
+                    prev_v_b = v_b
+
+                    dltaW = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+                    deltab = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+
+    
+            
+            elapsed = time.time() - start_time
+            #Y_pred = np.array(Y_pred).transpose()
+            Y_pred = self.predict(self.train_In, self.N_train)
+            training_loss.append(np.mean(LOSS))
+            training_accuracy.append(self.accuracy(train_out, Y_pred, data_length)[0])
+            validation_accuracy.append(self.accuracy(self.val_out, self.predict(self.X_val_In, self.N_val), self.N_val)[0])
+
+            print(
+                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
+                        % (
+                            epoch,
+                            training_loss[epoch],
+                            training_accuracy[epoch],
+                            validation_accuracy[epoch],
+                            elapsed,
+                            self.learning_rate,
+                        )
+                    )
+
+            wandb.log({'loss':np.mean(LOSS), 'training_accuracy':training_accuracy[epoch], 'validation_accuracy':validation_accuracy[epoch],'epoch':epoch })
+        
+        return training_loss, training_accuracy, validation_accuracy, Y_pred
+    
+
+    
+    def rmsProp(self, epochs,data_length, batch_size, learning_rate, weight_decay = 0):
+
+
+        train_In = self.train_In[:, :data_length]
+        train_out = self.train_out[:, :data_length]        
+
+        
+        training_loss = []
+        training_accuracy = []
+        validation_accuracy = []
+        
+        no_of_layers = len(self.layers)
+        EPS, Beta = 1e-8, 0.9
+        
+        v_w = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+        v_b = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+        
+        num_to_update = 0        
+        for epoch in range(epochs):
+            start_time = time.time()
+            idx = np.random.shuffle(np.arange(data_length))
+            train_In = train_In[:, idx].reshape(self.img_flattened_size, data_length)
+            train_out = train_out[:, idx].reshape(self.num_classes, data_length)
+
+
+            LOSS = []
+            #Y_pred = []
+                        
+            dltaW = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+            deltab = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+
+            for i in range(data_length):
+            
+                Y,H,A = self.forwardPropagate(self.train_In[:,i].reshape(self.img_flattened_size,1), self.weights, self.biases) 
+                dWeights, dBiases = self.backPropagate(Y,H,A,self.train_out[:,i].reshape(self.num_classes,1))
+            
+                dltaW = [dWeights[no_of_layers-2 - i] + dltaW[i] for i in range(no_of_layers - 1)]
+                deltab = [dBiases[no_of_layers-2 - i] + deltab[i] for i in range(no_of_layers - 1)]
+                
+                #Y_pred.append(Y.reshape(self.num_classes,))
+                if self.loss_function == "MSE":
+                    LOSS.append(self.meanSquaredErrorLoss(
+                            self.train_out[:, i].reshape(self.num_classes, 1), Y
+                        )
+                        + self.L2_reg_loss(weight_decay)
+                        )
+                elif self.loss_function == "CROSS":
+                    LOSS.append(
+                        self.crossEntropyLoss(
+                            self.train_out[:, i].reshape(self.num_classes, 1), Y
+                        )
+                        + self.L2_reg_loss(weight_decay)
+                    )
+
+                num_to_update +=1
+                
+                if int(num_to_update) % batch_size == 0:
+                
+                    v_w = [Beta*v_w[i] + (1-Beta)*(dltaW[i])**2 for i in range(no_of_layers - 1)]
+                    v_b = [Beta*v_b[i] + (1-Beta)*(deltab[i])**2 for i in range(no_of_layers - 1)]
+
+                    self.weights = {str(i+1):self.weights[str(i+1)]  - dltaW[i]*(learning_rate/np.sqrt(v_w[i]+EPS)) for i in range(len(self.weights))} 
+                    self.biases = {str(i+1):self.biases[str(i+1)]  - deltab[i]*(learning_rate/np.sqrt(v_b[i]+EPS)) for i in range(len(self.biases))}
+
+                    dltaW = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+                    deltab = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+    
+            
+            elapsed = time.time() - start_time
+            #Y_pred = np.array(Y_pred).transpose()
+            Y_pred = self.predict(self.train_In, self.N_train)
+            training_loss.append(np.mean(LOSS))
+            training_accuracy.append(self.accuracy(train_out, Y_pred, data_length)[0])
+            validation_accuracy.append(self.accuracy(self.val_out, self.predict(self.X_val_In, self.N_val), self.N_val)[0])
+
+            print(
+                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
+                        % (
+                            epoch,
+                            training_loss[epoch],
+                            training_accuracy[epoch],
+                            validation_accuracy[epoch],
+                            elapsed,
+                            self.learning_rate,
+                        )
+                    )
+                    
+            wandb.log({'loss':np.mean(LOSS), 'training_accuracy':training_accuracy[epoch], 'validation_accuracy':validation_accuracy[epoch],'epoch':epoch })
+        
+        return training_loss, training_accuracy, validation_accuracy, Y_pred  
+
+
+
+    def adam(self, epochs,data_length, batch_size, learning_rate, weight_decay = 0):
+        
+        train_In = self.train_In[:, :data_length]
+        train_out = self.train_out[:, :data_length]        
+
+        training_loss = []
+        training_accuracy = []
+        validation_accuracy = []
+        no_of_layers = len(self.layers)
+        EPS, Beta1, Beta2 = 1e-8, 0.9, 0.99
+        
+        m_w = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+        m_b = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+        
+        v_w = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+        v_b = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]        
+        
+        m_w_hat = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+        m_b_hat = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+        
+        v_w_hat = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+        v_b_hat = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]   
+        
+        num_to_update = 0 
+        for epoch in range(epochs):
+            start_time = time.time()
+            idx = np.random.shuffle(np.arange(data_length))
+            train_In = train_In[:, idx].reshape(self.img_flattened_size, data_length)
+            train_out = train_out[:, idx].reshape(self.num_classes, data_length)
+
+
+            LOSS = []
+            #Y_pred = []
+            
+            dltaW = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+            deltab = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+            
+           
+            for i in range(data_length):
+                Y,H,A = self.forwardPropagate(self.train_In[:,i].reshape(self.img_flattened_size,1), self.weights, self.biases) 
+                dWeights, dBiases = self.backPropagate(Y,H,A,self.train_out[:,i].reshape(self.num_classes,1))
+                
+                dltaW = [dWeights[no_of_layers-2 - i] + dltaW[i] for i in range(no_of_layers - 1)]
+                deltab = [dBiases[no_of_layers-2 - i] + deltab[i] for i in range(no_of_layers - 1)]
+
+                #Y_pred.append(Y.reshape(self.num_classes,))
+                if self.loss_function == "MSE":
+                    LOSS.append(self.meanSquaredErrorLoss(
+                            self.train_out[:, i].reshape(self.num_classes, 1), Y
+                        )
+                        + self.L2_reg_loss(weight_decay)
+                        )
+                elif self.loss_function == "CROSS":
+                    LOSS.append(
+                        self.crossEntropyLoss(
+                            self.train_out[:, i].reshape(self.num_classes, 1), Y
+                        )
+                        + self.L2_reg_loss(weight_decay)
+                    )
+
+                
+                num_to_update += 1
+                ctr = 0
+                if int(num_to_update) % batch_size == 0:
+                    ctr += 1
+                
+                    m_w = [Beta1*m_w[i] + (1-Beta1)*dltaW[i] for i in range(no_of_layers - 1)]
+                    m_b = [Beta1*m_b[i] + (1-Beta1)*deltab[i] for i in range(no_of_layers - 1)]
+                
+                    v_w = [Beta2*v_w[i] + (1-Beta2)*(dltaW[i])**2 for i in range(no_of_layers - 1)]
+                    v_b = [Beta2*v_b[i] + (1-Beta2)*(deltab[i])**2 for i in range(no_of_layers - 1)]
+                    
+                    m_w_hat = [m_w[i]/(1-Beta1**(epoch+1)) for i in range(no_of_layers - 1)]
+                    m_b_hat = [m_b[i]/(1-Beta1**(epoch+1)) for i in range(no_of_layers - 1)]            
+                
+                    v_w_hat = [v_w[i]/(1-Beta2**(epoch+1)) for i in range(no_of_layers - 1)]
+                    v_b_hat = [v_b[i]/(1-Beta2**(epoch+1)) for i in range(no_of_layers - 1)]
+                
+                    self.weights = {str(i+1):self.weights[str(i+1)] - (learning_rate/np.sqrt(v_w[i]+EPS))*m_w_hat[i] for i in range(len(self.weights))} 
+                    self.biases = {str(i+1):self.biases[str(i+1)] - (learning_rate/np.sqrt(v_b[i]+EPS))*m_b_hat[i] for i in range(len(self.biases))}
+
+                    dltaW = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+                    deltab = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+
+
+            elapsed = time.time() - start_time
+            #Y_pred = np.array(Y_pred).transpose()
+            Y_pred = self.predict(self.train_In, self.N_train)
+            training_loss.append(np.mean(LOSS))
+            training_accuracy.append(self.accuracy(train_out, Y_pred, data_length)[0])
+            validation_accuracy.append(self.accuracy(self.val_out, self.predict(self.X_val_In, self.N_val), self.N_val)[0])
+
+            print(
+                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
+                        % (
+                            epoch,
+                            training_loss[epoch],
+                            training_accuracy[epoch],
+                            validation_accuracy[epoch],
+                            elapsed,
+                            self.learning_rate,
+                        )
+                    )
+                    
+            wandb.log({'loss':np.mean(LOSS), 'training_accuracy':training_accuracy[epoch], 'validation_accuracy':validation_accuracy[epoch],'epoch':epoch })
+        
+        return training_loss, training_accuracy, validation_accuracy, Y_pred
+
+
+    
+    def nadam(self, epochs,data_length, batch_size, learning_rate, weight_decay = 0):
+
+        train_In = self.train_In[:, :data_length]
+        train_out = self.train_out[:, :data_length]        
+
+        
+        training_loss = []
+        training_accuracy = []
+        validation_accuracy = []
+        no_of_layers = len(self.layers)
+        
+        Beta, EPS, Beta1, Beta2 = 0.9, 1e-8, 0.9, 0.99
+
+        m_w = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+        m_b = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+        
+        v_w = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+        v_b = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]        
+
+        m_w_hat = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+        m_b_hat = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+        
+        v_w_hat = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+        v_b_hat = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)] 
+
+        num_to_update = 0 
+        
+        
+        for epoch in range(epochs):
+            start_time = time.time()
+            idx = np.random.shuffle(np.arange(data_length))
+            train_In = train_In[:, idx].reshape(self.img_flattened_size, data_length)
+            train_out = train_out[:, idx].reshape(self.num_classes, data_length)
+
+            LOSS = []
+            #Y_pred = []
+
+            dltaW = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+            deltab = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+
+            for i in range(data_length):
+
+                Y,H,A = self.forwardPropagate(self.train_In[:,i].reshape(self.img_flattened_size,1), self.weights, self.biases) 
+                dWeights, dBiases = self.backPropagate(Y,H,A,self.train_out[:,i].reshape(self.num_classes,1))
+
+                dltaW = [dWeights[no_of_layers-2 - i] + dltaW[i] for i in range(no_of_layers - 1)]
+                deltab = [dBiases[no_of_layers-2 - i] + deltab[i] for i in range(no_of_layers - 1)]
+
+                #Y_pred.append(Y.reshape(self.num_classes,))
+                if self.loss_function == "MSE":
+                    LOSS.append(self.meanSquaredErrorLoss(
+                            self.train_out[:, i].reshape(self.num_classes, 1), Y
+                        )
+                        + self.L2_reg_loss(weight_decay)
+                        )
+                elif self.loss_function == "CROSS":
+                    LOSS.append(
+                        self.crossEntropyLoss(
+                            self.train_out[:, i].reshape(self.num_classes, 1), Y
+                        )
+                        + self.L2_reg_loss(weight_decay)
+                    )
+
+                num_to_update += 1
+                
+                if num_to_update % batch_size == 0:
+                    
+                    m_w = [Beta1*m_w[i] + (1-Beta1)*dltaW[i] for i in range(no_of_layers - 1)]
+                    m_b = [Beta1*m_b[i] + (1-Beta1)*deltab[i] for i in range(no_of_layers - 1)]
+                    
+                    v_w = [Beta2*v_w[i] + (1-Beta2)*(dltaW[i])**2 for i in range(no_of_layers - 1)]
+                    v_b = [Beta2*v_b[i] + (1-Beta2)*(deltab[i])**2 for i in range(no_of_layers - 1)]
+                    
+                    m_w_hat = [m_w[i]/(1-Beta1**(epoch+1)) for i in range(no_of_layers - 1)]
+                    m_b_hat = [m_b[i]/(1-Beta1**(epoch+1)) for i in range(no_of_layers - 1)]            
+                    
+                    v_w_hat = [v_w[i]/(1-Beta2**(epoch+1)) for i in range(no_of_layers - 1)]
+                    v_b_hat = [v_b[i]/(1-Beta2**(epoch+1)) for i in range(no_of_layers - 1)]
+                    
+                    self.weights = {str(i+1):self.weights[str(i+1)] - (learning_rate/(np.sqrt(v_w_hat[i])+EPS))*(Beta1*m_w_hat[i]+ (1-Beta1)*dltaW[i]) for i in range(len(self.weights))} 
+                    self.biases = {str(i+1):self.biases[str(i+1)] - (learning_rate/(np.sqrt(v_b_hat[i])+EPS))*(Beta1*m_b_hat[i] + (1-Beta1)*deltab[i]) for i in range(len(self.biases))}
+
+                    dltaW = [np.zeros((self.layers[l+1], self.layers[l])) for l in range(0, len(self.layers)-1)]
+                    deltab = [np.zeros((self.layers[l+1], 1)) for l in range(0, len(self.layers)-1)]
+             
+            elapsed = time.time() - start_time
+
+            #Y_pred = np.array(Y_pred).transpose()
+            Y_pred = self.predict(self.train_In, self.N_train)
+            training_loss.append(np.mean(LOSS))
+            training_accuracy.append(self.accuracy(train_out, Y_pred, data_length)[0])
+            validation_accuracy.append(self.accuracy(self.val_out, self.predict(self.X_val_In, self.N_val), self.N_val)[0])
+
+            print(
+                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
+                        % (
+                            epoch,
+                            training_loss[epoch],
+                            training_accuracy[epoch],
+                            validation_accuracy[epoch],
+                            elapsed,
+                            self.learning_rate,
+                        )
+                    )
+            wandb.log({'loss':np.mean(LOSS), 'training_accuracy':training_accuracy[epoch], 'validation_accuracy':validation_accuracy[epoch],'epoch':epoch })
+            
+        return training_loss, training_accuracy, validation_accuracy, Y_pred  
+        
