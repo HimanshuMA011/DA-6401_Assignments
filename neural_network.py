@@ -234,6 +234,7 @@ class FeedForwardNeuralNetwork:
         
         training_loss = []
         training_accuracy = []
+        validation_loss = []
         validation_accuracy = []
         
         no_of_layers = len(self.layers)
@@ -305,26 +306,52 @@ class FeedForwardNeuralNetwork:
             elapsed = time.time() - start_time
             
             Y_pred = self.predict(self.train_In, self.N_train)
+            Y_pred_val = self.predict(self.X_val_In, self.N_val)
             
+            if self.loss_function == "MSE":
+                val_loss_epoch = np.mean([
+                    self.meanSquaredErrorLoss(
+                        self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),
+                    ) + self.L2_reg_loss(weight_decay)
+                    for j in range(self.N_val)
+                ])
+            elif self.loss_function == "CROSS":
+                val_loss_epoch = np.mean([
+                    self.crossEntropyLoss(
+                        self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),
+                    ) + self.L2_reg_loss(weight_decay)
+                    for j in range(self.N_val)
+                ])
+            
+            validation_loss.append(val_loss_epoch)
             training_loss.append(np.mean(LOSS))
             training_accuracy.append(self.accuracy(train_out, Y_pred, data_length)[0])
             validation_accuracy.append(self.accuracy(self.val_out, self.predict(self.X_val_In, self.N_val), self.N_val)[0])
             
             print(
-                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
+                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Loss: %.3e, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
                         % (
                             epoch,
                             training_loss[epoch],
                             training_accuracy[epoch],
+                            validation_loss[epoch], 
                             validation_accuracy[epoch],
                             elapsed,
-                            self.learning_rate,
+                            learning_rate,
                         )
                     )
 
-            wandb.log({'loss':np.mean(LOSS), 'training_accuracy':training_accuracy[epoch], 'validation_accuracy':validation_accuracy[epoch],'epoch':epoch, })
+            wandb.log({
+                'loss': np.mean(LOSS), 
+                'training_accuracy': training_accuracy[epoch], 
+                'validation_loss': validation_loss[epoch], 
+                'validation_accuracy': validation_accuracy[epoch],
+                'epoch': epoch 
+            })
 
-        return training_loss, training_accuracy, validation_accuracy, Y_pred
+        return training_loss, training_accuracy, validation_loss, validation_accuracy, Y_pred
 
 
       
@@ -335,6 +362,7 @@ class FeedForwardNeuralNetwork:
 
         training_loss = []
         training_accuracy = []
+        validation_loss = []
         validation_accuracy = []
         
         no_of_layers = len(self.layers)
@@ -392,22 +420,34 @@ class FeedForwardNeuralNetwork:
             training_loss.append(np.mean(LOSS))
             training_accuracy.append(self.accuracy(train_out, Y_pred, data_length)[0])
             validation_accuracy.append(self.accuracy(self.val_out, self.predict(self.X_val_In, self.N_val), self.N_val)[0])
+            Y_pred_val = self.predict(self.X_val_In, self.N_val)
+            
+            if self.loss_function == "MSE":
+                val_loss_epoch = np.mean([self.meanSquaredErrorLoss(self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),) + self.L2_reg_loss(weight_decay)for j in range(self.N_val)])
+            elif self.loss_function == "CROSS":
+                val_loss_epoch = np.mean([self.crossEntropyLoss(self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),) + self.L2_reg_loss(weight_decay)for j in range(self.N_val)])
+            
+            validation_loss.append(val_loss_epoch)
 
             print(
-                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
+                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Loss: %.3e, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
                         % (
                             epoch,
                             training_loss[epoch],
                             training_accuracy[epoch],
+                            validation_loss[epoch],  
                             validation_accuracy[epoch],
                             elapsed,
-                            self.learning_rate,
+                            learning_rate,
                         )
                     )
-                    
-            wandb.log({'loss':np.mean(LOSS), 'training_accuracy':training_accuracy[epoch], 'validation_accuracy':validation_accuracy[epoch],'epoch':epoch })
-            
-        return training_loss, training_accuracy, validation_accuracy, Y_pred
+
+            wandb.log({'loss': np.mean(LOSS), 'training_accuracy': training_accuracy[epoch],'validation_loss': validation_loss[epoch],
+                'validation_accuracy': validation_accuracy[epoch],'epoch': epoch })
+
+        return training_loss, training_accuracy, validation_loss, validation_accuracy, Y_pred
 
 
 
@@ -420,6 +460,7 @@ class FeedForwardNeuralNetwork:
         
         training_loss = []
         training_accuracy = []
+        validation_loss = []
         validation_accuracy = []
         
         no_of_layers = len(self.layers)
@@ -481,23 +522,34 @@ class FeedForwardNeuralNetwork:
             training_loss.append(np.mean(LOSS))
             training_accuracy.append(self.accuracy(train_out, Y_pred, data_length)[0])
             validation_accuracy.append(self.accuracy(self.val_out, self.predict(self.X_val_In, self.N_val), self.N_val)[0])
+            Y_pred_val = self.predict(self.X_val_In, self.N_val)
+            
+            if self.loss_function == "MSE":
+                val_loss_epoch = np.mean([self.meanSquaredErrorLoss(self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),) + self.L2_reg_loss(weight_decay)for j in range(self.N_val)])
+            elif self.loss_function == "CROSS":
+                val_loss_epoch = np.mean([self.crossEntropyLoss(self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),) + self.L2_reg_loss(weight_decay)for j in range(self.N_val)])
+            
+            validation_loss.append(val_loss_epoch)
 
             print(
-                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
+                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Loss: %.3e, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
                         % (
                             epoch,
                             training_loss[epoch],
                             training_accuracy[epoch],
+                            validation_loss[epoch],  
                             validation_accuracy[epoch],
                             elapsed,
-                            self.learning_rate,
+                            learning_rate,
                         )
                     )
 
-            wandb.log({'loss':np.mean(LOSS), 'training_accuracy':training_accuracy[epoch], 'validation_accuracy':validation_accuracy[epoch],'epoch':epoch })
+            wandb.log({'loss': np.mean(LOSS), 'training_accuracy': training_accuracy[epoch],'validation_loss': validation_loss[epoch],
+                'validation_accuracy': validation_accuracy[epoch],'epoch': epoch })
 
-
-        return training_loss, training_accuracy, validation_accuracy, Y_pred
+        return training_loss, training_accuracy, validation_loss, validation_accuracy, Y_pred
 
     
 
@@ -510,6 +562,7 @@ class FeedForwardNeuralNetwork:
 
         training_loss = []
         training_accuracy = []
+        validation_loss = []
         validation_accuracy = []
         
         no_of_layers = len(self.layers)
@@ -583,22 +636,34 @@ class FeedForwardNeuralNetwork:
             training_loss.append(np.mean(LOSS))
             training_accuracy.append(self.accuracy(train_out, Y_pred, data_length)[0])
             validation_accuracy.append(self.accuracy(self.val_out, self.predict(self.X_val_In, self.N_val), self.N_val)[0])
+            Y_pred_val = self.predict(self.X_val_In, self.N_val)
+            
+            if self.loss_function == "MSE":
+                val_loss_epoch = np.mean([self.meanSquaredErrorLoss(self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),) + self.L2_reg_loss(weight_decay)for j in range(self.N_val)])
+            elif self.loss_function == "CROSS":
+                val_loss_epoch = np.mean([self.crossEntropyLoss(self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),) + self.L2_reg_loss(weight_decay)for j in range(self.N_val)])
+            
+            validation_loss.append(val_loss_epoch)
 
             print(
-                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
+                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Loss: %.3e, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
                         % (
                             epoch,
                             training_loss[epoch],
                             training_accuracy[epoch],
+                            validation_loss[epoch],  
                             validation_accuracy[epoch],
                             elapsed,
                             self.learning_rate,
                         )
                     )
 
-            wandb.log({'loss':np.mean(LOSS), 'training_accuracy':training_accuracy[epoch], 'validation_accuracy':validation_accuracy[epoch],'epoch':epoch })
-        
-        return training_loss, training_accuracy, validation_accuracy, Y_pred
+            wandb.log({'loss': np.mean(LOSS), 'training_accuracy': training_accuracy[epoch],'validation_loss': validation_loss[epoch],
+                'validation_accuracy': validation_accuracy[epoch],'epoch': epoch })
+
+        return training_loss, training_accuracy, validation_loss, validation_accuracy, Y_pred
     
 
     
@@ -611,6 +676,7 @@ class FeedForwardNeuralNetwork:
         
         training_loss = []
         training_accuracy = []
+        validation_loss = []
         validation_accuracy = []
         
         no_of_layers = len(self.layers)
@@ -676,22 +742,34 @@ class FeedForwardNeuralNetwork:
             training_loss.append(np.mean(LOSS))
             training_accuracy.append(self.accuracy(train_out, Y_pred, data_length)[0])
             validation_accuracy.append(self.accuracy(self.val_out, self.predict(self.X_val_In, self.N_val), self.N_val)[0])
+            Y_pred_val = self.predict(self.X_val_In, self.N_val)
+            
+            if self.loss_function == "MSE":
+                val_loss_epoch = np.mean([self.meanSquaredErrorLoss(self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),) + self.L2_reg_loss(weight_decay)for j in range(self.N_val)])
+            elif self.loss_function == "CROSS":
+                val_loss_epoch = np.mean([self.crossEntropyLoss(self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),) + self.L2_reg_loss(weight_decay)for j in range(self.N_val)])
+            
+            validation_loss.append(val_loss_epoch)
 
             print(
-                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
+                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Loss: %.3e, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
                         % (
                             epoch,
                             training_loss[epoch],
                             training_accuracy[epoch],
+                            validation_loss[epoch],  
                             validation_accuracy[epoch],
                             elapsed,
                             self.learning_rate,
                         )
                     )
-                    
-            wandb.log({'loss':np.mean(LOSS), 'training_accuracy':training_accuracy[epoch], 'validation_accuracy':validation_accuracy[epoch],'epoch':epoch })
-        
-        return training_loss, training_accuracy, validation_accuracy, Y_pred  
+
+            wandb.log({'loss': np.mean(LOSS), 'training_accuracy': training_accuracy[epoch],'validation_loss': validation_loss[epoch],
+                'validation_accuracy': validation_accuracy[epoch],'epoch': epoch })
+
+        return training_loss, training_accuracy, validation_loss, validation_accuracy, Y_pred
 
 
 
@@ -702,6 +780,7 @@ class FeedForwardNeuralNetwork:
 
         training_loss = []
         training_accuracy = []
+        validation_loss = []
         validation_accuracy = []
         no_of_layers = len(self.layers)
         EPS, Beta1, Beta2 = 1e-8, 0.9, 0.99
@@ -786,22 +865,34 @@ class FeedForwardNeuralNetwork:
             training_loss.append(np.mean(LOSS))
             training_accuracy.append(self.accuracy(train_out, Y_pred, data_length)[0])
             validation_accuracy.append(self.accuracy(self.val_out, self.predict(self.X_val_In, self.N_val), self.N_val)[0])
+            
+            Y_pred_val = self.predict(self.X_val_In, self.N_val)
+            if self.loss_function == "MSE":
+                val_loss_epoch = np.mean([self.meanSquaredErrorLoss(self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),) + self.L2_reg_loss(weight_decay)for j in range(self.N_val)])
+            elif self.loss_function == "CROSS":
+                val_loss_epoch = np.mean([self.crossEntropyLoss(self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),) + self.L2_reg_loss(weight_decay)for j in range(self.N_val)])
+            
+            validation_loss.append(val_loss_epoch)
 
             print(
-                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
+                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Loss: %.3e, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
                         % (
                             epoch,
                             training_loss[epoch],
                             training_accuracy[epoch],
+                            validation_loss[epoch],  
                             validation_accuracy[epoch],
                             elapsed,
                             self.learning_rate,
                         )
                     )
-                    
-            wandb.log({'loss':np.mean(LOSS), 'training_accuracy':training_accuracy[epoch], 'validation_accuracy':validation_accuracy[epoch],'epoch':epoch })
-        
-        return training_loss, training_accuracy, validation_accuracy, Y_pred
+
+            wandb.log({'loss': np.mean(LOSS), 'training_accuracy': training_accuracy[epoch],'validation_loss': validation_loss[epoch],
+                'validation_accuracy': validation_accuracy[epoch],'epoch': epoch })
+
+        return training_loss, training_accuracy, validation_loss, validation_accuracy, Y_pred
 
 
     
@@ -813,6 +904,7 @@ class FeedForwardNeuralNetwork:
         
         training_loss = []
         training_accuracy = []
+        validation_loss = []
         validation_accuracy = []
         no_of_layers = len(self.layers)
         
@@ -898,18 +990,31 @@ class FeedForwardNeuralNetwork:
             training_accuracy.append(self.accuracy(train_out, Y_pred, data_length)[0])
             validation_accuracy.append(self.accuracy(self.val_out, self.predict(self.X_val_In, self.N_val), self.N_val)[0])
 
+            Y_pred_val = self.predict(self.X_val_In, self.N_val)
+            if self.loss_function == "MSE":
+                val_loss_epoch = np.mean([self.meanSquaredErrorLoss(self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),) + self.L2_reg_loss(weight_decay)for j in range(self.N_val)])
+            elif self.loss_function == "CROSS":
+                val_loss_epoch = np.mean([self.crossEntropyLoss(self.val_out[:, j].reshape(self.num_classes, 1),
+                        Y_pred_val[:, j].reshape(self.num_classes, 1),) + self.L2_reg_loss(weight_decay)for j in range(self.N_val)])
+            
+            validation_loss.append(val_loss_epoch)
+
             print(
-                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
+                        "Epoch: %d, Loss: %.3e, Training accuracy:%.3f, Validation Loss: %.3e, Validation Accuracy: %.3f, Time: %.3f, Learning Rate: %.3e"
                         % (
                             epoch,
                             training_loss[epoch],
                             training_accuracy[epoch],
+                            validation_loss[epoch],  
                             validation_accuracy[epoch],
                             elapsed,
                             self.learning_rate,
                         )
                     )
-            wandb.log({'loss':np.mean(LOSS), 'training_accuracy':training_accuracy[epoch], 'validation_accuracy':validation_accuracy[epoch],'epoch':epoch })
-            
-        return training_loss, training_accuracy, validation_accuracy, Y_pred  
+
+            wandb.log({'loss': np.mean(LOSS), 'training_accuracy': training_accuracy[epoch],'validation_loss': validation_loss[epoch],
+                'validation_accuracy': validation_accuracy[epoch],'epoch': epoch })
+
+        return training_loss, training_accuracy, validation_loss, validation_accuracy, Y_pred
         
