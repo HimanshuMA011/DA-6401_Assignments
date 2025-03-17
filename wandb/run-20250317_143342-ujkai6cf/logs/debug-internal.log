@@ -1,0 +1,16 @@
+{"time":"2025-03-17T14:33:42.9785988+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250317_143342-ujkai6cf\\logs\\debug-core.log"}
+{"time":"2025-03-17T14:33:43.0949021+05:30","level":"INFO","msg":"created new stream","id":"ujkai6cf"}
+{"time":"2025-03-17T14:33:43.0949021+05:30","level":"INFO","msg":"stream: started","id":"ujkai6cf"}
+{"time":"2025-03-17T14:33:43.0949021+05:30","level":"INFO","msg":"handler: started","stream_id":"ujkai6cf"}
+{"time":"2025-03-17T14:33:43.0949021+05:30","level":"INFO","msg":"sender: started","stream_id":"ujkai6cf"}
+{"time":"2025-03-17T14:33:43.0949021+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"ujkai6cf"}
+{"time":"2025-03-17T14:33:43.4545273+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T14:41:43.7459917+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T14:41:43.7480136+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T14:41:44.7650164+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.389174,"progress":"251B/251B"},{"desc":"uploading output.log","runtime_seconds":0.389174,"progress":"735B/735B"},{"desc":"uploading config.yaml","runtime_seconds":0.0717028,"progress":"977B/977B"}],"total_operations":3}}
+{"time":"2025-03-17T14:41:45.0287047+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T14:41:46.3798183+05:30","level":"INFO","msg":"stream: closing","id":"ujkai6cf"}
+{"time":"2025-03-17T14:41:46.3875721+05:30","level":"INFO","msg":"handler: closed","stream_id":"ujkai6cf"}
+{"time":"2025-03-17T14:41:46.3875721+05:30","level":"INFO","msg":"sender: closed","stream_id":"ujkai6cf"}
+{"time":"2025-03-17T14:41:46.3875721+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"ujkai6cf"}
+{"time":"2025-03-17T14:41:46.388084+05:30","level":"INFO","msg":"stream: closed","id":"ujkai6cf"}

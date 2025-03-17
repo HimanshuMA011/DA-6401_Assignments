@@ -1,0 +1,16 @@
+{"time":"2025-03-10T15:28:49.7308179+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_152849-gx2ppxwc\\logs\\debug-core.log"}
+{"time":"2025-03-10T15:28:49.8404895+05:30","level":"INFO","msg":"created new stream","id":"gx2ppxwc"}
+{"time":"2025-03-10T15:28:49.8408275+05:30","level":"INFO","msg":"stream: started","id":"gx2ppxwc"}
+{"time":"2025-03-10T15:28:49.8408275+05:30","level":"INFO","msg":"handler: started","stream_id":"gx2ppxwc"}
+{"time":"2025-03-10T15:28:49.8409657+05:30","level":"INFO","msg":"sender: started","stream_id":"gx2ppxwc"}
+{"time":"2025-03-10T15:28:49.8409147+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"gx2ppxwc"}
+{"time":"2025-03-10T15:28:50.4333053+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T15:35:01.6925129+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T15:35:01.6937243+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T15:35:02.7150956+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3929647,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3929647,"progress":"237B/237B"}],"total_operations":2}}
+{"time":"2025-03-10T15:35:03.2539536+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T15:35:04.7292655+05:30","level":"INFO","msg":"stream: closing","id":"gx2ppxwc"}
+{"time":"2025-03-10T15:35:04.7292655+05:30","level":"INFO","msg":"handler: closed","stream_id":"gx2ppxwc"}
+{"time":"2025-03-10T15:35:04.7292655+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"gx2ppxwc"}
+{"time":"2025-03-10T15:35:04.7292655+05:30","level":"INFO","msg":"sender: closed","stream_id":"gx2ppxwc"}
+{"time":"2025-03-10T15:35:04.7292655+05:30","level":"INFO","msg":"stream: closed","id":"gx2ppxwc"}

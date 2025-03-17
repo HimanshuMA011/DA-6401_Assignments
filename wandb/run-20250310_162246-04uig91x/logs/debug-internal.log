@@ -1,0 +1,30 @@
+{"time":"2025-03-10T16:22:46.534824+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_162246-04uig91x\\logs\\debug-core.log"}
+{"time":"2025-03-10T16:22:46.64938+05:30","level":"INFO","msg":"created new stream","id":"04uig91x"}
+{"time":"2025-03-10T16:22:46.64938+05:30","level":"INFO","msg":"stream: started","id":"04uig91x"}
+{"time":"2025-03-10T16:22:46.64938+05:30","level":"INFO","msg":"handler: started","stream_id":"04uig91x"}
+{"time":"2025-03-10T16:22:46.64938+05:30","level":"INFO","msg":"sender: started","stream_id":"04uig91x"}
+{"time":"2025-03-10T16:22:46.64938+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"04uig91x"}
+{"time":"2025-03-10T16:22:47.2397986+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T16:24:06.6365545+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.162:64443->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-10T16:24:20.3037359+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/04uig91x/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-10T16:24:38.8338157+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-10T16:24:43.3393853+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/04uig91x/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-10T16:24:54.1888254+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp 35.186.228.49:443: connectex: An established connection was aborted by the software in your host machine."}
+{"time":"2025-03-10T16:24:54.1888254+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/04uig91x/file_stream\": dial tcp 35.186.228.49:443: connectex: An established connection was aborted by the software in your host machine."}
+{"time":"2025-03-10T16:25:03.0764783+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T16:25:03.3979786+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/04uig91x/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T16:25:34.4400483+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T16:25:34.4400483+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/04uig91x/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T16:26:36.2401642+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/04uig91x/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-10T16:26:36.2401642+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-10T16:27:36.2433009+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T16:27:36.2433009+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/04uig91x/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T16:31:22.1689956+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T16:31:22.1704161+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T16:31:23.1805836+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-03-10T16:31:24.0088449+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T16:31:25.3819882+05:30","level":"INFO","msg":"stream: closing","id":"04uig91x"}
+{"time":"2025-03-10T16:31:25.3819882+05:30","level":"INFO","msg":"handler: closed","stream_id":"04uig91x"}
+{"time":"2025-03-10T16:31:25.3819882+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"04uig91x"}
+{"time":"2025-03-10T16:31:25.3819882+05:30","level":"INFO","msg":"sender: closed","stream_id":"04uig91x"}
+{"time":"2025-03-10T16:31:25.3832956+05:30","level":"INFO","msg":"stream: closed","id":"04uig91x"}

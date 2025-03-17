@@ -1,0 +1,16 @@
+{"time":"2025-03-17T23:39:17.659733+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250317_233917-sa19nzcu\\logs\\debug-core.log"}
+{"time":"2025-03-17T23:39:17.7716992+05:30","level":"INFO","msg":"created new stream","id":"sa19nzcu"}
+{"time":"2025-03-17T23:39:17.7716992+05:30","level":"INFO","msg":"stream: started","id":"sa19nzcu"}
+{"time":"2025-03-17T23:39:17.7716992+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"sa19nzcu"}
+{"time":"2025-03-17T23:39:17.7716992+05:30","level":"INFO","msg":"handler: started","stream_id":"sa19nzcu"}
+{"time":"2025-03-17T23:39:17.7722134+05:30","level":"INFO","msg":"sender: started","stream_id":"sa19nzcu"}
+{"time":"2025-03-17T23:39:18.1670312+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T23:39:18.5107107+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T23:39:18.5121255+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T23:39:19.5338894+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":0.2973611}],"total_operations":1}}
+{"time":"2025-03-17T23:39:20.2767856+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T23:39:21.6203374+05:30","level":"INFO","msg":"stream: closing","id":"sa19nzcu"}
+{"time":"2025-03-17T23:39:21.6203374+05:30","level":"INFO","msg":"handler: closed","stream_id":"sa19nzcu"}
+{"time":"2025-03-17T23:39:21.6203374+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"sa19nzcu"}
+{"time":"2025-03-17T23:39:21.6208441+05:30","level":"INFO","msg":"sender: closed","stream_id":"sa19nzcu"}
+{"time":"2025-03-17T23:39:21.6209672+05:30","level":"INFO","msg":"stream: closed","id":"sa19nzcu"}

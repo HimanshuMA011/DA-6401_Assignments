@@ -1,0 +1,96 @@
+2025-03-10 16:22:46,523 INFO    Thread-158 (_run_job):13540 [wandb_setup.py:_flush():67] Current SDK version is 0.19.7.dev1
+2025-03-10 16:22:46,523 INFO    Thread-158 (_run_job):13540 [wandb_setup.py:_flush():67] Configure stats pid to 13540
+2025-03-10 16:22:46,523 INFO    Thread-158 (_run_job):13540 [wandb_setup.py:_flush():67] Loading settings from C:\Users\himan\.config\wandb\settings
+2025-03-10 16:22:46,523 INFO    Thread-158 (_run_job):13540 [wandb_setup.py:_flush():67] Loading settings from c:\Users\himan\Documents\GitHub\DA-6401_Assignments\wandb\settings
+2025-03-10 16:22:46,523 INFO    Thread-158 (_run_job):13540 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-10 16:22:46,523 INFO    Thread-158 (_run_job):13540 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\himan\Documents\GitHub\DA-6401_Assignments\wandb\run-20250310_162246-04uig91x\logs\debug.log
+2025-03-10 16:22:46,523 INFO    Thread-158 (_run_job):13540 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\himan\Documents\GitHub\DA-6401_Assignments\wandb\run-20250310_162246-04uig91x\logs\debug-internal.log
+2025-03-10 16:22:46,523 INFO    Thread-158 (_run_job):13540 [wandb_init.py:monkeypatch_ipython():599] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000028C60EDFF10>
+2025-03-10 16:22:46,523 INFO    Thread-158 (_run_job):13540 [wandb_init.py:init():761] calling init triggers
+2025-03-10 16:22:46,523 INFO    Thread-158 (_run_job):13540 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'ReLU', 'batch_size': 32, 'hidden_layers': 4, 'initializer': 'RANDOM', 'learning_rate': 0.0001, 'max_epochs': 10, 'no_of_hidden_neurons': 64, 'optimizer': 'NAG', 'weight_decay': 0}
+config: {'max_epochs': 5, 'hidden_layers': 3, 'no_of_hidden_neurons': 32, 'weight_decay': 0, 'learning_rate': 0.001, 'optimizer': 'NADAM', 'batch_size': 32, 'activation': 'tanh', 'initializer': 'XAVIER', 'loss': 'CROSS', '_wandb': {}}
+2025-03-10 16:22:46,523 INFO    Thread-158 (_run_job):13540 [wandb_init.py:init():784] starting backend
+2025-03-10 16:22:46,523 INFO    Thread-158 (_run_job):13540 [wandb_init.py:init():788] sending inform_init request
+2025-03-10 16:22:46,533 INFO    Thread-158 (_run_job):13540 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn, using: spawn
+2025-03-10 16:22:46,533 INFO    Thread-158 (_run_job):13540 [wandb_init.py:init():803] backend started and connected
+2025-03-10 16:22:46,534 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'ReLU', 'batch_size': 32, 'hidden_layers': 4, 'initializer': 'RANDOM', 'learning_rate': 0.0001, 'max_epochs': 10, 'no_of_hidden_neurons': 64, 'optimizer': 'NAG', 'weight_decay': 0}
+2025-03-10 16:22:46,535 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-03-10 16:22:46,554 INFO    Thread-158 (_run_job):13540 [wandb_init.py:init():896] updated telemetry
+2025-03-10 16:22:46,559 INFO    Thread-158 (_run_job):13540 [wandb_init.py:init():920] communicating run to backend with 90.0 second timeout
+2025-03-10 16:22:47,231 INFO    Thread-158 (_run_job):13540 [wandb_init.py:init():995] starting run threads in backend
+2025-03-10 16:22:47,377 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_console_start():2377] atexit reg
+2025-03-10 16:22:47,377 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-10 16:22:47,377 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-10 16:22:47,377 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_redirect():2317] Redirects installed.
+2025-03-10 16:22:47,379 INFO    Thread-158 (_run_job):13540 [wandb_init.py:init():1037] run started, returning control to user process
+2025-03-10 16:24:54,188 INFO    Thread-94 (_heartbeat):13540 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\urllib3\connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x0000028C60F70130>: Failed to establish a new connection: [WinError 10053] An established connection was aborted by the software in your host machine
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000028C60F70130>: Failed to establish a new connection: [WinError 10053] An established connection was aborted by the software in your host machine'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\wandb\sdk\lib\retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\wandb\sdk\internal\internal_api.py", line 398, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "c:\Users\himan\.conda\envs\hj\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000028C60F70130>: Failed to establish a new connection: [WinError 10053] An established connection was aborted by the software in your host machine'))
+2025-03-10 16:31:22,167 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_finish():2112] finishing run ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/04uig91x
+2025-03-10 16:31:22,168 ERROR   Thread-158 (_run_job):13540 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-10 16:31:22,168 INFO    Thread-158 (_run_job):13540 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-10 16:31:22,168 INFO    Thread-158 (_run_job):13540 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-10 16:31:22,168 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_atexit_cleanup():2342] got exitcode: 0
+2025-03-10 16:31:22,168 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_restore():2324] restore
+2025-03-10 16:31:22,168 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_restore():2330] restore done
+2025-03-10 16:31:25,377 INFO    MsgRouterThr:13540 [mailbox.py:close():115] Closing mailbox, abandoning 1 handles.
+2025-03-10 16:31:25,377 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_footer_history_summary_info():3958] rendering history
+2025-03-10 16:31:25,377 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_footer_history_summary_info():3990] rendering summary
+2025-03-10 16:31:25,377 INFO    Thread-158 (_run_job):13540 [wandb_run.py:_footer_sync_info():3919] logging synced files

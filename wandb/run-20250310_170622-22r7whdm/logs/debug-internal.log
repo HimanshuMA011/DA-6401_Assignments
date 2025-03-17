@@ -1,0 +1,16 @@
+{"time":"2025-03-10T17:06:22.5961121+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_170622-22r7whdm\\logs\\debug-core.log"}
+{"time":"2025-03-10T17:06:22.7144273+05:30","level":"INFO","msg":"created new stream","id":"22r7whdm"}
+{"time":"2025-03-10T17:06:22.7144273+05:30","level":"INFO","msg":"stream: started","id":"22r7whdm"}
+{"time":"2025-03-10T17:06:22.7144273+05:30","level":"INFO","msg":"handler: started","stream_id":"22r7whdm"}
+{"time":"2025-03-10T17:06:22.7144273+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"22r7whdm"}
+{"time":"2025-03-10T17:06:22.7149603+05:30","level":"INFO","msg":"sender: started","stream_id":"22r7whdm"}
+{"time":"2025-03-10T17:06:23.0942032+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T17:24:10.1174611+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T17:24:10.1185976+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T17:24:11.130327+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.4111661,"progress":"240B/240B"},{"desc":"uploading output.log","runtime_seconds":0.4111661,"progress":"1.4KB/1.4KB"},{"desc":"uploading config.yaml","runtime_seconds":0.1524384,"progress":"968B/968B"}],"total_operations":3}}
+{"time":"2025-03-10T17:24:11.3785835+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T17:24:12.7305209+05:30","level":"INFO","msg":"stream: closing","id":"22r7whdm"}
+{"time":"2025-03-10T17:24:12.7305209+05:30","level":"INFO","msg":"handler: closed","stream_id":"22r7whdm"}
+{"time":"2025-03-10T17:24:12.7305209+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"22r7whdm"}
+{"time":"2025-03-10T17:24:12.7305209+05:30","level":"INFO","msg":"sender: closed","stream_id":"22r7whdm"}
+{"time":"2025-03-10T17:24:12.7305209+05:30","level":"INFO","msg":"stream: closed","id":"22r7whdm"}

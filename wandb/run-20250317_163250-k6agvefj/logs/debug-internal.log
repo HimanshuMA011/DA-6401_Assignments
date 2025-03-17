@@ -1,0 +1,7 @@
+{"time":"2025-03-17T16:32:50.7513221+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250317_163250-k6agvefj\\logs\\debug-core.log"}
+{"time":"2025-03-17T16:32:50.8620373+05:30","level":"INFO","msg":"created new stream","id":"k6agvefj"}
+{"time":"2025-03-17T16:32:50.8620373+05:30","level":"INFO","msg":"stream: started","id":"k6agvefj"}
+{"time":"2025-03-17T16:32:50.8620373+05:30","level":"INFO","msg":"handler: started","stream_id":"k6agvefj"}
+{"time":"2025-03-17T16:32:50.8620373+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"k6agvefj"}
+{"time":"2025-03-17T16:32:50.8620373+05:30","level":"INFO","msg":"sender: started","stream_id":"k6agvefj"}
+{"time":"2025-03-17T16:32:51.4240154+05:30","level":"INFO","msg":"Starting system monitor"}

@@ -1,0 +1,18 @@
+{"time":"2025-03-17T16:34:37.1275262+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250317_163437-ytvrat9j\\logs\\debug-core.log"}
+{"time":"2025-03-17T16:34:37.2386365+05:30","level":"INFO","msg":"created new stream","id":"ytvrat9j"}
+{"time":"2025-03-17T16:34:37.2386365+05:30","level":"INFO","msg":"stream: started","id":"ytvrat9j"}
+{"time":"2025-03-17T16:34:37.2386365+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"ytvrat9j"}
+{"time":"2025-03-17T16:34:37.2386365+05:30","level":"INFO","msg":"sender: started","stream_id":"ytvrat9j"}
+{"time":"2025-03-17T16:34:37.2386365+05:30","level":"INFO","msg":"handler: started","stream_id":"ytvrat9j"}
+{"time":"2025-03-17T16:34:37.6850843+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T16:34:38.209042+05:30","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-17T16:34:54.0507078+05:30","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-17T16:34:54.0527096+05:30","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-17T16:34:59.0233496+05:30","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-17T16:34:59.215004+05:30","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-17T16:35:25.3301853+05:30","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-17T16:35:25.9257842+05:30","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-17T16:35:43.5790324+05:30","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-17T16:35:43.5812133+05:30","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-17T16:35:50.5282576+05:30","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-17T16:35:50.8358947+05:30","level":"INFO","msg":"Pausing system monitor"}

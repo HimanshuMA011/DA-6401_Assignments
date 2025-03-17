@@ -1,0 +1,14 @@
+Epoch: 0, Loss: 2.617e-02, Training accuracy:0.962, Validation Loss: 1.419e-02, Validation Accuracy: 0.958, Time: 25.090, Learning Rate: 1.000e-04
+Epoch: 1, Loss: 1.111e-02, Training accuracy:0.977, Validation Loss: 1.095e-02, Validation Accuracy: 0.964, Time: 36.237, Learning Rate: 1.000e-04
+Epoch: 2, Loss: 8.010e-03, Training accuracy:0.981, Validation Loss: 1.029e-02, Validation Accuracy: 0.967, Time: 30.099, Learning Rate: 1.000e-04
+Epoch: 3, Loss: 6.372e-03, Training accuracy:0.985, Validation Loss: 9.701e-03, Validation Accuracy: 0.969, Time: 35.284, Learning Rate: 1.000e-04
+Epoch: 4, Loss: 5.285e-03, Training accuracy:0.986, Validation Loss: 9.450e-03, Validation Accuracy: 0.971, Time: 39.331, Learning Rate: 1.000e-04
+Epoch: 0, Loss: 2.599e-02, Training accuracy:0.962, Validation Loss: 1.540e-02, Validation Accuracy: 0.956, Time: 27.924, Learning Rate: 1.000e-04
+Epoch: 1, Loss: 1.073e-02, Training accuracy:0.978, Validation Loss: 1.144e-02, Validation Accuracy: 0.967, Time: 32.359, Learning Rate: 1.000e-04
+Create sweep with ID: gu9uwgrg
+Sweep URL: https://wandb.ai/ma23c011-indian-institute-of-technology-madras/mnist/sweeps/gu9uwgrg
+Epoch: 0, Loss: 2.638e-02, Training accuracy:0.958, Validation Loss: 1.612e-02, Validation Accuracy: 0.956, Time: 28.653, Learning Rate: 1.000e-04
+Epoch: 1, Loss: 1.137e-02, Training accuracy:0.975, Validation Loss: 1.147e-02, Validation Accuracy: 0.969, Time: 29.942, Learning Rate: 1.000e-04
+Epoch: 2, Loss: 8.207e-03, Training accuracy:0.981, Validation Loss: 1.030e-02, Validation Accuracy: 0.971, Time: 31.138, Learning Rate: 1.000e-04
+Epoch: 3, Loss: 6.506e-03, Training accuracy:0.984, Validation Loss: 9.712e-03, Validation Accuracy: 0.974, Time: 30.704, Learning Rate: 1.000e-04
+Epoch: 4, Loss: 5.374e-03, Training accuracy:0.986, Validation Loss: 9.402e-03, Validation Accuracy: 0.974, Time: 31.993, Learning Rate: 1.000e-04

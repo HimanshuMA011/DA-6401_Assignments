@@ -1,0 +1,16 @@
+{"time":"2025-03-10T22:56:40.9128485+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_225640-if6wnz76\\logs\\debug-core.log"}
+{"time":"2025-03-10T22:56:41.0380911+05:30","level":"INFO","msg":"created new stream","id":"if6wnz76"}
+{"time":"2025-03-10T22:56:41.0386507+05:30","level":"INFO","msg":"stream: started","id":"if6wnz76"}
+{"time":"2025-03-10T22:56:41.0386507+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"if6wnz76"}
+{"time":"2025-03-10T22:56:41.0386507+05:30","level":"INFO","msg":"handler: started","stream_id":"if6wnz76"}
+{"time":"2025-03-10T22:56:41.0386507+05:30","level":"INFO","msg":"sender: started","stream_id":"if6wnz76"}
+{"time":"2025-03-10T22:56:41.5100018+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T23:21:02.4143893+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T23:21:02.4148948+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T23:21:03.4271226+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.1728938,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.1728938,"progress":"251B/251B"}],"total_operations":2}}
+{"time":"2025-03-10T23:21:04.0346511+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T23:21:05.675105+05:30","level":"INFO","msg":"stream: closing","id":"if6wnz76"}
+{"time":"2025-03-10T23:21:05.675105+05:30","level":"INFO","msg":"handler: closed","stream_id":"if6wnz76"}
+{"time":"2025-03-10T23:21:05.675105+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"if6wnz76"}
+{"time":"2025-03-10T23:21:05.675105+05:30","level":"INFO","msg":"sender: closed","stream_id":"if6wnz76"}
+{"time":"2025-03-10T23:21:05.675105+05:30","level":"INFO","msg":"stream: closed","id":"if6wnz76"}

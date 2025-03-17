@@ -1,0 +1,16 @@
+{"time":"2025-03-10T13:53:25.5426715+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_135325-kgrt60pr\\logs\\debug-core.log"}
+{"time":"2025-03-10T13:53:25.6598063+05:30","level":"INFO","msg":"created new stream","id":"kgrt60pr"}
+{"time":"2025-03-10T13:53:25.6598063+05:30","level":"INFO","msg":"stream: started","id":"kgrt60pr"}
+{"time":"2025-03-10T13:53:25.6604196+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"kgrt60pr"}
+{"time":"2025-03-10T13:53:25.6604196+05:30","level":"INFO","msg":"sender: started","stream_id":"kgrt60pr"}
+{"time":"2025-03-10T13:53:25.6607131+05:30","level":"INFO","msg":"handler: started","stream_id":"kgrt60pr"}
+{"time":"2025-03-10T13:53:26.1919775+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T13:58:35.5543707+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T13:58:35.560033+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T13:58:36.5668635+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.376422,"progress":"2.0KB/2.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.376422,"progress":"207B/207B"},{"desc":"uploading config.yaml","runtime_seconds":0.0627257,"progress":"968B/968B"}],"total_operations":3}}
+{"time":"2025-03-10T13:58:37.5908379+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T13:58:38.9607772+05:30","level":"INFO","msg":"stream: closing","id":"kgrt60pr"}
+{"time":"2025-03-10T13:58:38.9607772+05:30","level":"INFO","msg":"handler: closed","stream_id":"kgrt60pr"}
+{"time":"2025-03-10T13:58:38.9607772+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"kgrt60pr"}
+{"time":"2025-03-10T13:58:38.9607772+05:30","level":"INFO","msg":"sender: closed","stream_id":"kgrt60pr"}
+{"time":"2025-03-10T13:58:38.9607772+05:30","level":"INFO","msg":"stream: closed","id":"kgrt60pr"}

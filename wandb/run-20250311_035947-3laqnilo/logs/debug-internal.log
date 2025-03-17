@@ -1,0 +1,16 @@
+{"time":"2025-03-11T03:59:47.5028249+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250311_035947-3laqnilo\\logs\\debug-core.log"}
+{"time":"2025-03-11T03:59:47.6162209+05:30","level":"INFO","msg":"created new stream","id":"3laqnilo"}
+{"time":"2025-03-11T03:59:47.6162209+05:30","level":"INFO","msg":"stream: started","id":"3laqnilo"}
+{"time":"2025-03-11T03:59:47.6162209+05:30","level":"INFO","msg":"handler: started","stream_id":"3laqnilo"}
+{"time":"2025-03-11T03:59:47.6162209+05:30","level":"INFO","msg":"sender: started","stream_id":"3laqnilo"}
+{"time":"2025-03-11T03:59:47.6167287+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"3laqnilo"}
+{"time":"2025-03-11T03:59:48.2126814+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-11T04:47:32.0679007+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-11T04:47:32.0692217+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-11T04:47:33.0833471+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3694178,"progress":"2.0KB/2.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3694178,"progress":"208B/208B"},{"desc":"uploading config.yaml","runtime_seconds":0.1040273,"progress":"976B/976B"}],"total_operations":3}}
+{"time":"2025-03-11T04:47:34.1226185+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-11T04:47:35.6536395+05:30","level":"INFO","msg":"stream: closing","id":"3laqnilo"}
+{"time":"2025-03-11T04:47:35.6539786+05:30","level":"INFO","msg":"handler: closed","stream_id":"3laqnilo"}
+{"time":"2025-03-11T04:47:35.6539786+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"3laqnilo"}
+{"time":"2025-03-11T04:47:35.6539786+05:30","level":"INFO","msg":"sender: closed","stream_id":"3laqnilo"}
+{"time":"2025-03-11T04:47:35.6541669+05:30","level":"INFO","msg":"stream: closed","id":"3laqnilo"}

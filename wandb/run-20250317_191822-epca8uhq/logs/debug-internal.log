@@ -1,0 +1,16 @@
+{"time":"2025-03-17T19:18:22.7783499+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250317_191822-epca8uhq\\logs\\debug-core.log"}
+{"time":"2025-03-17T19:18:22.8976783+05:30","level":"INFO","msg":"created new stream","id":"epca8uhq"}
+{"time":"2025-03-17T19:18:22.8977977+05:30","level":"INFO","msg":"stream: started","id":"epca8uhq"}
+{"time":"2025-03-17T19:18:22.8977977+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"epca8uhq"}
+{"time":"2025-03-17T19:18:22.8977977+05:30","level":"INFO","msg":"handler: started","stream_id":"epca8uhq"}
+{"time":"2025-03-17T19:18:22.8977977+05:30","level":"INFO","msg":"sender: started","stream_id":"epca8uhq"}
+{"time":"2025-03-17T19:18:23.3630187+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T19:22:18.8028942+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T19:22:18.8034008+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T19:22:19.8101654+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.2255832,"progress":"735B/735B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.2255832,"progress":"239B/239B"}],"total_operations":2}}
+{"time":"2025-03-17T19:22:20.3652892+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T19:22:21.8079691+05:30","level":"INFO","msg":"stream: closing","id":"epca8uhq"}
+{"time":"2025-03-17T19:22:21.8079691+05:30","level":"INFO","msg":"handler: closed","stream_id":"epca8uhq"}
+{"time":"2025-03-17T19:22:21.8079691+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"epca8uhq"}
+{"time":"2025-03-17T19:22:21.8079691+05:30","level":"INFO","msg":"sender: closed","stream_id":"epca8uhq"}
+{"time":"2025-03-17T19:22:21.8079691+05:30","level":"INFO","msg":"stream: closed","id":"epca8uhq"}

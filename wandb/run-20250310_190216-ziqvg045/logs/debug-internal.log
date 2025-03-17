@@ -1,0 +1,17 @@
+{"time":"2025-03-10T19:02:16.3980432+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_190216-ziqvg045\\logs\\debug-core.log"}
+{"time":"2025-03-10T19:02:16.5093637+05:30","level":"INFO","msg":"created new stream","id":"ziqvg045"}
+{"time":"2025-03-10T19:02:16.5093637+05:30","level":"INFO","msg":"stream: started","id":"ziqvg045"}
+{"time":"2025-03-10T19:02:16.5093637+05:30","level":"INFO","msg":"handler: started","stream_id":"ziqvg045"}
+{"time":"2025-03-10T19:02:16.5093637+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"ziqvg045"}
+{"time":"2025-03-10T19:02:16.5093637+05:30","level":"INFO","msg":"sender: started","stream_id":"ziqvg045"}
+{"time":"2025-03-10T19:02:16.9184692+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T19:09:25.4233567+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T19:09:25.4233567+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T19:09:26.438164+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary","runtime_seconds":53.7214029},{"desc":"uploading output.log","runtime_seconds":0.4009501,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.4009501,"progress":"252B/252B"},{"desc":"uploading config.yaml","runtime_seconds":0.0854689,"progress":"974B/974B"}],"total_operations":4}}
+{"time":"2025-03-10T19:09:26.7268118+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T19:09:33.0224619+05:30","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/ziqvg045/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-03-10T19:09:37.1576564+05:30","level":"INFO","msg":"stream: closing","id":"ziqvg045"}
+{"time":"2025-03-10T19:09:37.1698731+05:30","level":"INFO","msg":"handler: closed","stream_id":"ziqvg045"}
+{"time":"2025-03-10T19:09:37.1698731+05:30","level":"INFO","msg":"sender: closed","stream_id":"ziqvg045"}
+{"time":"2025-03-10T19:09:37.1698731+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"ziqvg045"}
+{"time":"2025-03-10T19:09:37.1703846+05:30","level":"INFO","msg":"stream: closed","id":"ziqvg045"}

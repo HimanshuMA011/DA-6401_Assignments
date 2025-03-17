@@ -1,0 +1,27 @@
+{
+  "os": "Windows-10-10.0.22631-SP0",
+  "python": "CPython 3.10.3",
+  "startedAt": "2025-03-10T13:19:30.482081Z",
+  "program": "c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\sweep_to_wandb.ipynb",
+  "codePath": "sweep_to_wandb.ipynb",
+  "email": "ma23c011@smail.iitm.ac.in",
+  "root": "c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments",
+  "host": "Hj",
+  "executable": "c:\\Users\\himan\\.conda\\envs\\hj\\python.exe",
+  "codePathLocal": "sweep_to_wandb.ipynb",
+  "cpu_count": 12,
+  "cpu_count_logical": 16,
+  "disk": {
+    "/": {
+      "total": "644535001088",
+      "used": "199367479296"
+    }
+  },
+  "memory": {
+    "total": "16908148736"
+  },
+  "cpu": {
+    "count": 12,
+    "countLogical": 16
+  }
+}

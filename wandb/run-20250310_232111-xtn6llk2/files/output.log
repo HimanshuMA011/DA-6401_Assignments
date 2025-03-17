@@ -1,0 +1,10 @@
+Epoch: 0, Loss: 9.122e-02, Training accuracy:0.802, Validation Loss: 5.584e-02, Validation Accuracy: 0.795, Time: 23.743, Learning Rate: 1.000e-03
+Epoch: 1, Loss: 5.015e-02, Training accuracy:0.837, Validation Loss: 4.817e-02, Validation Accuracy: 0.832, Time: 29.718, Learning Rate: 1.000e-03
+Epoch: 2, Loss: 4.391e-02, Training accuracy:0.858, Validation Loss: 4.415e-02, Validation Accuracy: 0.850, Time: 28.367, Learning Rate: 1.000e-03
+Epoch: 3, Loss: 4.027e-02, Training accuracy:0.868, Validation Loss: 4.177e-02, Validation Accuracy: 0.856, Time: 30.848, Learning Rate: 1.000e-03
+Epoch: 4, Loss: 3.778e-02, Training accuracy:0.874, Validation Loss: 4.010e-02, Validation Accuracy: 0.864, Time: 27.255, Learning Rate: 1.000e-03
+Epoch: 5, Loss: 3.594e-02, Training accuracy:0.880, Validation Loss: 3.890e-02, Validation Accuracy: 0.868, Time: 28.888, Learning Rate: 1.000e-03
+Epoch: 6, Loss: 3.451e-02, Training accuracy:0.885, Validation Loss: 3.802e-02, Validation Accuracy: 0.870, Time: 27.437, Learning Rate: 1.000e-03
+Epoch: 7, Loss: 3.339e-02, Training accuracy:0.887, Validation Loss: 3.738e-02, Validation Accuracy: 0.869, Time: 26.141, Learning Rate: 1.000e-03
+Epoch: 8, Loss: 3.247e-02, Training accuracy:0.890, Validation Loss: 3.687e-02, Validation Accuracy: 0.870, Time: 26.237, Learning Rate: 1.000e-03
+Epoch: 9, Loss: 3.171e-02, Training accuracy:0.892, Validation Loss: 3.642e-02, Validation Accuracy: 0.870, Time: 28.596, Learning Rate: 1.000e-03

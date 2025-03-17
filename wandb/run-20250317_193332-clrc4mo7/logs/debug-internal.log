@@ -1,0 +1,18 @@
+{"time":"2025-03-17T19:33:32.5736641+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250317_193332-clrc4mo7\\logs\\debug-core.log"}
+{"time":"2025-03-17T19:33:32.6862907+05:30","level":"INFO","msg":"created new stream","id":"clrc4mo7"}
+{"time":"2025-03-17T19:33:32.6862907+05:30","level":"INFO","msg":"stream: started","id":"clrc4mo7"}
+{"time":"2025-03-17T19:33:32.6862907+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"clrc4mo7"}
+{"time":"2025-03-17T19:33:32.6862907+05:30","level":"INFO","msg":"sender: started","stream_id":"clrc4mo7"}
+{"time":"2025-03-17T19:33:32.6862907+05:30","level":"INFO","msg":"handler: started","stream_id":"clrc4mo7"}
+{"time":"2025-03-17T19:33:33.1783096+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T19:36:20.6488313+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T19:36:20.6509848+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T19:36:20.9000933+05:30","level":"WARN","msg":"filestream: run history line too long, skipping","len":11375699,"max":10383360}
+{"time":"2025-03-17T19:36:21.2545019+05:30","level":"WARN","msg":"filestream: run summary line too long, skipping","len":11375879,"max":10383360}
+{"time":"2025-03-17T19:36:21.3832638+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":0.2196834},{"desc":"uploading output.log","runtime_seconds":0.070397,"progress":"735B/735B"}],"total_operations":2}}
+{"time":"2025-03-17T19:36:26.3265628+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T19:36:27.9887792+05:30","level":"INFO","msg":"stream: closing","id":"clrc4mo7"}
+{"time":"2025-03-17T19:36:27.9887792+05:30","level":"INFO","msg":"handler: closed","stream_id":"clrc4mo7"}
+{"time":"2025-03-17T19:36:27.9887792+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"clrc4mo7"}
+{"time":"2025-03-17T19:36:27.9887792+05:30","level":"INFO","msg":"sender: closed","stream_id":"clrc4mo7"}
+{"time":"2025-03-17T19:36:27.9887792+05:30","level":"INFO","msg":"stream: closed","id":"clrc4mo7"}

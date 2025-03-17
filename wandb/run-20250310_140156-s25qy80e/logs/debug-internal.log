@@ -1,0 +1,16 @@
+{"time":"2025-03-10T14:01:56.1071584+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_140156-s25qy80e\\logs\\debug-core.log"}
+{"time":"2025-03-10T14:01:56.2191865+05:30","level":"INFO","msg":"created new stream","id":"s25qy80e"}
+{"time":"2025-03-10T14:01:56.2191865+05:30","level":"INFO","msg":"stream: started","id":"s25qy80e"}
+{"time":"2025-03-10T14:01:56.2191865+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"s25qy80e"}
+{"time":"2025-03-10T14:01:56.2191865+05:30","level":"INFO","msg":"handler: started","stream_id":"s25qy80e"}
+{"time":"2025-03-10T14:01:56.2197309+05:30","level":"INFO","msg":"sender: started","stream_id":"s25qy80e"}
+{"time":"2025-03-10T14:01:56.65258+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T14:21:17.2317992+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T14:21:17.2327369+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T14:21:18.2700661+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.4180838,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.4180838,"progress":"248B/248B"},{"desc":"uploading config.yaml","runtime_seconds":0.0898295,"progress":"977B/977B"}],"total_operations":3}}
+{"time":"2025-03-10T14:21:18.5655249+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T14:21:19.9811758+05:30","level":"INFO","msg":"stream: closing","id":"s25qy80e"}
+{"time":"2025-03-10T14:21:19.9811758+05:30","level":"INFO","msg":"handler: closed","stream_id":"s25qy80e"}
+{"time":"2025-03-10T14:21:19.9811758+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"s25qy80e"}
+{"time":"2025-03-10T14:21:19.9959399+05:30","level":"INFO","msg":"sender: closed","stream_id":"s25qy80e"}
+{"time":"2025-03-10T14:21:19.9959399+05:30","level":"INFO","msg":"stream: closed","id":"s25qy80e"}

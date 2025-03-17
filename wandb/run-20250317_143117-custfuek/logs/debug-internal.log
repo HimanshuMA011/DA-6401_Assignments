@@ -1,0 +1,16 @@
+{"time":"2025-03-17T14:31:17.8383858+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250317_143117-custfuek\\logs\\debug-core.log"}
+{"time":"2025-03-17T14:31:17.9647024+05:30","level":"INFO","msg":"created new stream","id":"custfuek"}
+{"time":"2025-03-17T14:31:17.9647024+05:30","level":"INFO","msg":"stream: started","id":"custfuek"}
+{"time":"2025-03-17T14:31:17.9652455+05:30","level":"INFO","msg":"handler: started","stream_id":"custfuek"}
+{"time":"2025-03-17T14:31:17.9652455+05:30","level":"INFO","msg":"sender: started","stream_id":"custfuek"}
+{"time":"2025-03-17T14:31:17.9652455+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"custfuek"}
+{"time":"2025-03-17T14:31:18.4239068+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T14:33:33.5788999+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T14:33:33.5794359+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T14:33:34.5853638+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3815749,"progress":"735B/735B"},{"desc":"uploading config.yaml","runtime_seconds":0.0245871,"progress":"966B/966B"}],"total_operations":2}}
+{"time":"2025-03-17T14:33:35.5442211+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T14:33:36.9093068+05:30","level":"INFO","msg":"stream: closing","id":"custfuek"}
+{"time":"2025-03-17T14:33:36.9093068+05:30","level":"INFO","msg":"handler: closed","stream_id":"custfuek"}
+{"time":"2025-03-17T14:33:36.9093068+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"custfuek"}
+{"time":"2025-03-17T14:33:36.9098166+05:30","level":"INFO","msg":"sender: closed","stream_id":"custfuek"}
+{"time":"2025-03-17T14:33:36.9098876+05:30","level":"INFO","msg":"stream: closed","id":"custfuek"}

@@ -1,0 +1,23 @@
+2025-03-17 16:41:58,192 INFO    MainThread:27900 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\himan\Documents\GitHub\DA-6401_Assignments\wandb\run-20250317_164158-u5kp2c96\logs\debug.log
+2025-03-17 16:41:58,192 INFO    MainThread:27900 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\himan\Documents\GitHub\DA-6401_Assignments\wandb\run-20250317_164158-u5kp2c96\logs\debug-internal.log
+2025-03-17 16:41:58,193 INFO    MainThread:27900 [wandb_init.py:init():761] calling init triggers
+2025-03-17 16:41:58,193 INFO    MainThread:27900 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'max_epochs': 5, 'hidden_layers': 3, 'no_of_hidden_neurons': 64, 'weight_decay': 0, 'learning_rate': 0.0001, 'optimizer': 'SGD', 'batch_size': 32, 'activation': 'ReLU', 'initializer': 'XAVIER', 'loss': 'CROSS', '_wandb': {}}
+2025-03-17 16:41:58,193 INFO    MainThread:27900 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-17 16:43:39,649 INFO    MainThread:27900 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-17 16:43:39,649 INFO    MainThread:27900 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-17 16:44:10,907 INFO    MainThread:27900 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-17 16:44:11,817 INFO    MainThread:27900 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-17 16:44:11,818 INFO    MainThread:27900 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-17 16:44:12,448 INFO    MainThread:27900 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-17 16:44:12,452 INFO    MainThread:27900 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-17 16:44:12,452 INFO    MainThread:27900 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-17 16:44:24,747 INFO    MainThread:27900 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-17 16:44:24,752 INFO    MainThread:27900 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\himan\Documents\GitHub\DA-6401_Assignments\wandb\run-20250317_164424-vc1mj599\logs\debug.log
+2025-03-17 16:44:24,755 INFO    MainThread:27900 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\himan\Documents\GitHub\DA-6401_Assignments\wandb\run-20250317_164424-vc1mj599\logs\debug-internal.log
+2025-03-17 16:44:24,755 INFO    MainThread:27900 [wandb_init.py:init():761] calling init triggers
+2025-03-17 16:44:24,755 INFO    MainThread:27900 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'max_epochs': 5, 'hidden_layers': 3, 'no_of_hidden_neurons': 64, 'weight_decay': 0, 'learning_rate': 0.0001, 'optimizer': 'SGD', 'batch_size': 32, 'activation': 'ReLU', 'initializer': 'XAVIER', 'loss': 'CROSS', '_wandb': {}}
+2025-03-17 16:44:24,755 INFO    MainThread:27900 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-17 16:47:48,018 INFO    MainThread:27900 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-17 16:47:48,019 INFO    MainThread:27900 [wandb_init.py:_pause_backend():564] pausing backend

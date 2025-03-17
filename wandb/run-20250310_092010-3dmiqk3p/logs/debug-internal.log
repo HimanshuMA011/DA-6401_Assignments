@@ -1,0 +1,16 @@
+{"time":"2025-03-10T09:20:10.5191575+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_092010-3dmiqk3p\\logs\\debug-core.log"}
+{"time":"2025-03-10T09:20:10.6313364+05:30","level":"INFO","msg":"created new stream","id":"3dmiqk3p"}
+{"time":"2025-03-10T09:20:10.6318693+05:30","level":"INFO","msg":"stream: started","id":"3dmiqk3p"}
+{"time":"2025-03-10T09:20:10.6318693+05:30","level":"INFO","msg":"handler: started","stream_id":"3dmiqk3p"}
+{"time":"2025-03-10T09:20:10.6319667+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"3dmiqk3p"}
+{"time":"2025-03-10T09:20:10.6319667+05:30","level":"INFO","msg":"sender: started","stream_id":"3dmiqk3p"}
+{"time":"2025-03-10T09:20:11.0278846+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T09:24:17.4278103+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T09:24:17.4287328+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T09:24:18.431735+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3987574,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3987574,"progress":"240B/240B"},{"desc":"uploading config.yaml","runtime_seconds":0.1098488,"progress":"965B/965B"}],"total_operations":3}}
+{"time":"2025-03-10T09:24:18.659436+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T09:24:20.0265887+05:30","level":"INFO","msg":"stream: closing","id":"3dmiqk3p"}
+{"time":"2025-03-10T09:24:20.0265887+05:30","level":"INFO","msg":"handler: closed","stream_id":"3dmiqk3p"}
+{"time":"2025-03-10T09:24:20.0265887+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"3dmiqk3p"}
+{"time":"2025-03-10T09:24:20.0268469+05:30","level":"INFO","msg":"sender: closed","stream_id":"3dmiqk3p"}
+{"time":"2025-03-10T09:24:20.0268469+05:30","level":"INFO","msg":"stream: closed","id":"3dmiqk3p"}

@@ -1,0 +1,16 @@
+{"time":"2025-03-10T03:16:05.2372738+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_031605-a36ghnos\\logs\\debug-core.log"}
+{"time":"2025-03-10T03:16:05.3561697+05:30","level":"INFO","msg":"created new stream","id":"a36ghnos"}
+{"time":"2025-03-10T03:16:05.3561697+05:30","level":"INFO","msg":"stream: started","id":"a36ghnos"}
+{"time":"2025-03-10T03:16:05.3561697+05:30","level":"INFO","msg":"handler: started","stream_id":"a36ghnos"}
+{"time":"2025-03-10T03:16:05.3561697+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"a36ghnos"}
+{"time":"2025-03-10T03:16:05.3561697+05:30","level":"INFO","msg":"sender: started","stream_id":"a36ghnos"}
+{"time":"2025-03-10T03:16:05.7039533+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T03:37:07.8123241+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T03:37:07.8134441+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T03:37:08.826596+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.4251416,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.4251416,"progress":"240B/240B"},{"desc":"uploading config.yaml","runtime_seconds":0.1346276,"progress":"971B/971B"}],"total_operations":3}}
+{"time":"2025-03-10T03:37:09.8282352+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T03:37:11.179719+05:30","level":"INFO","msg":"stream: closing","id":"a36ghnos"}
+{"time":"2025-03-10T03:37:11.179719+05:30","level":"INFO","msg":"handler: closed","stream_id":"a36ghnos"}
+{"time":"2025-03-10T03:37:11.179719+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"a36ghnos"}
+{"time":"2025-03-10T03:37:11.179719+05:30","level":"INFO","msg":"sender: closed","stream_id":"a36ghnos"}
+{"time":"2025-03-10T03:37:11.179719+05:30","level":"INFO","msg":"stream: closed","id":"a36ghnos"}

@@ -1,0 +1,20 @@
+wandb_version: 1
+
+activation:
+  value: ReLU
+batch_size:
+  value: 32
+hidden_layers:
+  value: 5
+initializer:
+  value: Xavier
+learning_rate:
+  value: 0.001
+max_epochs:
+  value: 10
+no_of_hidden_neurons:
+  value: 64
+optimizer:
+  value: nadam
+weight_decay:
+  value: 0

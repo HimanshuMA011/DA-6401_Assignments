@@ -1,0 +1,16 @@
+{"time":"2025-03-10T19:32:11.0272596+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_193211-o2kcl1um\\logs\\debug-core.log"}
+{"time":"2025-03-10T19:32:11.1384453+05:30","level":"INFO","msg":"created new stream","id":"o2kcl1um"}
+{"time":"2025-03-10T19:32:11.1389485+05:30","level":"INFO","msg":"stream: started","id":"o2kcl1um"}
+{"time":"2025-03-10T19:32:11.1389485+05:30","level":"INFO","msg":"handler: started","stream_id":"o2kcl1um"}
+{"time":"2025-03-10T19:32:11.1389485+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"o2kcl1um"}
+{"time":"2025-03-10T19:32:11.1389485+05:30","level":"INFO","msg":"sender: started","stream_id":"o2kcl1um"}
+{"time":"2025-03-10T19:32:11.5074334+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T19:34:30.3741262+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T19:34:30.3747886+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T19:34:31.3782007+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3503802,"progress":"735B/735B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3503802,"progress":"252B/252B"},{"desc":"uploading config.yaml","runtime_seconds":0.0249226,"progress":"970B/970B"}],"total_operations":3}}
+{"time":"2025-03-10T19:34:31.7396646+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T19:34:33.2412039+05:30","level":"INFO","msg":"stream: closing","id":"o2kcl1um"}
+{"time":"2025-03-10T19:34:33.2412039+05:30","level":"INFO","msg":"handler: closed","stream_id":"o2kcl1um"}
+{"time":"2025-03-10T19:34:33.2412039+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"o2kcl1um"}
+{"time":"2025-03-10T19:34:33.2412039+05:30","level":"INFO","msg":"sender: closed","stream_id":"o2kcl1um"}
+{"time":"2025-03-10T19:34:33.241713+05:30","level":"INFO","msg":"stream: closed","id":"o2kcl1um"}

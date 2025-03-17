@@ -1,0 +1,17 @@
+{"time":"2025-03-10T14:52:15.5594705+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_145215-gh60x2lm\\logs\\debug-core.log"}
+{"time":"2025-03-10T14:52:15.6733311+05:30","level":"INFO","msg":"created new stream","id":"gh60x2lm"}
+{"time":"2025-03-10T14:52:15.6733311+05:30","level":"INFO","msg":"stream: started","id":"gh60x2lm"}
+{"time":"2025-03-10T14:52:15.6733311+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"gh60x2lm"}
+{"time":"2025-03-10T14:52:15.6733311+05:30","level":"INFO","msg":"handler: started","stream_id":"gh60x2lm"}
+{"time":"2025-03-10T14:52:15.6733311+05:30","level":"INFO","msg":"sender: started","stream_id":"gh60x2lm"}
+{"time":"2025-03-10T14:52:16.0744165+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T14:54:50.4209926+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.162:62480->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-10T14:58:31.523832+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T14:58:31.5257948+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T14:58:32.5316656+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.0926552},{"desc":"uploading output.log","runtime_seconds":0.0926552}],"total_operations":2}}
+{"time":"2025-03-10T14:58:33.196781+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T14:58:34.5952277+05:30","level":"INFO","msg":"stream: closing","id":"gh60x2lm"}
+{"time":"2025-03-10T14:58:34.5952277+05:30","level":"INFO","msg":"handler: closed","stream_id":"gh60x2lm"}
+{"time":"2025-03-10T14:58:34.5952277+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"gh60x2lm"}
+{"time":"2025-03-10T14:58:34.5952277+05:30","level":"INFO","msg":"sender: closed","stream_id":"gh60x2lm"}
+{"time":"2025-03-10T14:58:34.5957389+05:30","level":"INFO","msg":"stream: closed","id":"gh60x2lm"}

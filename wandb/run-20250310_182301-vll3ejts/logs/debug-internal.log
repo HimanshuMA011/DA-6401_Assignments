@@ -1,0 +1,16 @@
+{"time":"2025-03-10T18:23:01.8274622+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_182301-vll3ejts\\logs\\debug-core.log"}
+{"time":"2025-03-10T18:23:01.9475996+05:30","level":"INFO","msg":"created new stream","id":"vll3ejts"}
+{"time":"2025-03-10T18:23:01.9475996+05:30","level":"INFO","msg":"stream: started","id":"vll3ejts"}
+{"time":"2025-03-10T18:23:01.9475996+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"vll3ejts"}
+{"time":"2025-03-10T18:23:01.9475996+05:30","level":"INFO","msg":"sender: started","stream_id":"vll3ejts"}
+{"time":"2025-03-10T18:23:01.9475996+05:30","level":"INFO","msg":"handler: started","stream_id":"vll3ejts"}
+{"time":"2025-03-10T18:23:02.3763596+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T18:26:23.6634586+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T18:26:23.6641072+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T18:26:24.6727314+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3394389,"progress":"735B/735B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3394389,"progress":"249B/249B"},{"desc":"uploading config.yaml","runtime_seconds":0.0233719,"progress":"964B/964B"}],"total_operations":3}}
+{"time":"2025-03-10T18:26:25.0247888+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T18:26:26.7076147+05:30","level":"INFO","msg":"stream: closing","id":"vll3ejts"}
+{"time":"2025-03-10T18:26:26.7076147+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"vll3ejts"}
+{"time":"2025-03-10T18:26:26.7076147+05:30","level":"INFO","msg":"handler: closed","stream_id":"vll3ejts"}
+{"time":"2025-03-10T18:26:26.7076147+05:30","level":"INFO","msg":"sender: closed","stream_id":"vll3ejts"}
+{"time":"2025-03-10T18:26:26.7076147+05:30","level":"INFO","msg":"stream: closed","id":"vll3ejts"}

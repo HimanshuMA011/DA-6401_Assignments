@@ -1,0 +1,18 @@
+c:\Users\himan\Documents\GitHub\DA-6401_Assignments\imp_function.py:29: RuntimeWarning: overflow encountered in exp
+  return np.exp(Z) / np.sum(np.exp(Z))
+c:\Users\himan\Documents\GitHub\DA-6401_Assignments\imp_function.py:29: RuntimeWarning: invalid value encountered in divide
+  return np.exp(Z) / np.sum(np.exp(Z))
+c:\Users\himan\Documents\GitHub\DA-6401_Assignments\neural_network.py:97: RuntimeWarning: divide by zero encountered in log
+  CE = [-Y_true[i] * np.log(Y_pred[i]) for i in range(len(Y_pred))]
+c:\Users\himan\Documents\GitHub\DA-6401_Assignments\neural_network.py:97: RuntimeWarning: invalid value encountered in multiply
+  CE = [-Y_true[i] * np.log(Y_pred[i]) for i in range(len(Y_pred))]
+Epoch: 0, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 72.952, Learning Rate: 1.000e-04
+Epoch: 1, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 77.087, Learning Rate: 1.000e-04
+Epoch: 2, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 78.311, Learning Rate: 1.000e-04
+Epoch: 3, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 76.992, Learning Rate: 1.000e-04
+Epoch: 4, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 76.934, Learning Rate: 1.000e-04
+Epoch: 5, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 76.249, Learning Rate: 1.000e-04
+Epoch: 6, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 75.284, Learning Rate: 1.000e-04
+Epoch: 7, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 76.508, Learning Rate: 1.000e-04
+Epoch: 8, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 79.825, Learning Rate: 1.000e-04
+Epoch: 9, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 78.782, Learning Rate: 1.000e-04

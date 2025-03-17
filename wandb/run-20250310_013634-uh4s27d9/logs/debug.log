@@ -23,3 +23,14 @@ config: {'max_epochs': 5, 'hidden_layers': 3, 'no_of_hidden_neurons': 32, 'weigh
 2025-03-10 01:36:35,737 INFO    Thread-4 (_run_job):16724 [wandb_run.py:_redirect():2292] Wrapping output streams.
 2025-03-10 01:36:35,738 INFO    Thread-4 (_run_job):16724 [wandb_run.py:_redirect():2317] Redirects installed.
 2025-03-10 01:36:35,741 INFO    Thread-4 (_run_job):16724 [wandb_init.py:init():1037] run started, returning control to user process
+2025-03-10 02:01:29,825 INFO    Thread-4 (_run_job):16724 [wandb_run.py:_finish():2112] finishing run ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/uh4s27d9
+2025-03-10 02:01:29,826 ERROR   Thread-4 (_run_job):16724 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-10 02:01:29,826 INFO    Thread-4 (_run_job):16724 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-10 02:01:29,826 INFO    Thread-4 (_run_job):16724 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-10 02:01:29,826 INFO    Thread-4 (_run_job):16724 [wandb_run.py:_atexit_cleanup():2342] got exitcode: 0
+2025-03-10 02:01:29,826 INFO    Thread-4 (_run_job):16724 [wandb_run.py:_restore():2324] restore
+2025-03-10 02:01:29,827 INFO    Thread-4 (_run_job):16724 [wandb_run.py:_restore():2330] restore done
+2025-03-10 02:01:33,169 INFO    MsgRouterThr:16724 [mailbox.py:close():115] Closing mailbox, abandoning 1 handles.
+2025-03-10 02:01:33,171 INFO    Thread-4 (_run_job):16724 [wandb_run.py:_footer_history_summary_info():3958] rendering history
+2025-03-10 02:01:33,172 INFO    Thread-4 (_run_job):16724 [wandb_run.py:_footer_history_summary_info():3990] rendering summary
+2025-03-10 02:01:33,176 INFO    Thread-4 (_run_job):16724 [wandb_run.py:_footer_sync_info():3919] logging synced files

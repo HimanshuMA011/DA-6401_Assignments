@@ -1,0 +1,9 @@
+Epoch: 0, Loss: 7.132e-02, Training accuracy:0.843, Validation Loss: 4.485e-02, Validation Accuracy: 0.844, Time: 58.917, Learning Rate: 1.000e-04
+Epoch: 1, Loss: 4.156e-02, Training accuracy:0.859, Validation Loss: 4.067e-02, Validation Accuracy: 0.859, Time: 68.105, Learning Rate: 1.000e-04
+Epoch: 2, Loss: 3.800e-02, Training accuracy:0.867, Validation Loss: 3.860e-02, Validation Accuracy: 0.866, Time: 59.051, Learning Rate: 1.000e-04
+Epoch: 3, Loss: 3.616e-02, Training accuracy:0.873, Validation Loss: 3.721e-02, Validation Accuracy: 0.870, Time: 62.735, Learning Rate: 1.000e-04
+Epoch: 4, Loss: 3.494e-02, Training accuracy:0.877, Validation Loss: 3.628e-02, Validation Accuracy: 0.873, Time: 61.311, Learning Rate: 1.000e-04
+Create sweep with ID: z8af6y9k
+Sweep URL: https://wandb.ai/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/sweeps/z8af6y9k
+Create sweep with ID: d5nl1hr9
+Sweep URL: https://wandb.ai/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/sweeps/d5nl1hr9

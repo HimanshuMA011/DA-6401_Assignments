@@ -1,0 +1,16 @@
+{"time":"2025-03-10T18:47:16.9546775+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_184716-usm5r7xj\\logs\\debug-core.log"}
+{"time":"2025-03-10T18:47:17.0640099+05:30","level":"INFO","msg":"created new stream","id":"usm5r7xj"}
+{"time":"2025-03-10T18:47:17.0640099+05:30","level":"INFO","msg":"stream: started","id":"usm5r7xj"}
+{"time":"2025-03-10T18:47:17.0640099+05:30","level":"INFO","msg":"handler: started","stream_id":"usm5r7xj"}
+{"time":"2025-03-10T18:47:17.0640099+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"usm5r7xj"}
+{"time":"2025-03-10T18:47:17.0640099+05:30","level":"INFO","msg":"sender: started","stream_id":"usm5r7xj"}
+{"time":"2025-03-10T18:47:17.7928084+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T18:49:24.8968941+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T18:49:24.8978045+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T18:49:25.9058445+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.0305128,"progress":"966B/966B"}],"total_operations":1}}
+{"time":"2025-03-10T18:49:26.8626183+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T18:49:28.261084+05:30","level":"INFO","msg":"stream: closing","id":"usm5r7xj"}
+{"time":"2025-03-10T18:49:28.261084+05:30","level":"INFO","msg":"handler: closed","stream_id":"usm5r7xj"}
+{"time":"2025-03-10T18:49:28.261084+05:30","level":"INFO","msg":"sender: closed","stream_id":"usm5r7xj"}
+{"time":"2025-03-10T18:49:28.261084+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"usm5r7xj"}
+{"time":"2025-03-10T18:49:28.261084+05:30","level":"INFO","msg":"stream: closed","id":"usm5r7xj"}

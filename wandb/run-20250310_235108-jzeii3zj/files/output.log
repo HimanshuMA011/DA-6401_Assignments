@@ -1,0 +1,13 @@
+c:\Users\himan\Documents\GitHub\DA-6401_Assignments\imp_function.py:29: RuntimeWarning: overflow encountered in exp
+  return np.exp(Z) / np.sum(np.exp(Z))
+c:\Users\himan\Documents\GitHub\DA-6401_Assignments\imp_function.py:29: RuntimeWarning: invalid value encountered in divide
+  return np.exp(Z) / np.sum(np.exp(Z))
+c:\Users\himan\Documents\GitHub\DA-6401_Assignments\neural_network.py:97: RuntimeWarning: divide by zero encountered in log
+  CE = [-Y_true[i] * np.log(Y_pred[i]) for i in range(len(Y_pred))]
+c:\Users\himan\Documents\GitHub\DA-6401_Assignments\neural_network.py:97: RuntimeWarning: invalid value encountered in multiply
+  CE = [-Y_true[i] * np.log(Y_pred[i]) for i in range(len(Y_pred))]
+Epoch: 0, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 42.060, Learning Rate: 1.000e-03
+Epoch: 1, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 47.001, Learning Rate: 1.000e-03
+Epoch: 2, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 47.869, Learning Rate: 1.000e-03
+Epoch: 3, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 122.254, Learning Rate: 1.000e-03
+Epoch: 4, Loss: nan, Training accuracy:0.100, Validation Loss: nan, Validation Accuracy: 0.101, Time: 142.194, Learning Rate: 1.000e-03

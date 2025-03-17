@@ -1,0 +1,7 @@
+{"time":"2025-03-17T20:04:38.8220156+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250317_200438-apkvu9pv\\logs\\debug-core.log"}
+{"time":"2025-03-17T20:04:39.7599091+05:30","level":"INFO","msg":"created new stream","id":"apkvu9pv"}
+{"time":"2025-03-17T20:04:39.7599091+05:30","level":"INFO","msg":"stream: started","id":"apkvu9pv"}
+{"time":"2025-03-17T20:04:39.7599091+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"apkvu9pv"}
+{"time":"2025-03-17T20:04:39.7599091+05:30","level":"INFO","msg":"handler: started","stream_id":"apkvu9pv"}
+{"time":"2025-03-17T20:04:39.7599091+05:30","level":"INFO","msg":"sender: started","stream_id":"apkvu9pv"}
+{"time":"2025-03-17T20:04:40.2444571+05:30","level":"INFO","msg":"Starting system monitor"}

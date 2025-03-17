@@ -1,0 +1,20 @@
+wandb_version: 1
+
+activation:
+  value: tanh
+batch_size:
+  value: 32
+hidden_layers:
+  value: 5
+initializer:
+  value: XAVIER
+learning_rate:
+  value: 0.0001
+max_epochs:
+  value: 10
+no_of_hidden_neurons:
+  value: 32
+optimizer:
+  value: NAG
+weight_decay:
+  value: 0.0005

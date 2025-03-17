@@ -1,0 +1,16 @@
+{"time":"2025-03-17T15:19:03.1386225+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250317_151903-7csuro55\\logs\\debug-core.log"}
+{"time":"2025-03-17T15:19:03.2584114+05:30","level":"INFO","msg":"created new stream","id":"7csuro55"}
+{"time":"2025-03-17T15:19:03.2584761+05:30","level":"INFO","msg":"stream: started","id":"7csuro55"}
+{"time":"2025-03-17T15:19:03.2584761+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"7csuro55"}
+{"time":"2025-03-17T15:19:03.2589918+05:30","level":"INFO","msg":"handler: started","stream_id":"7csuro55"}
+{"time":"2025-03-17T15:19:03.2593878+05:30","level":"INFO","msg":"sender: started","stream_id":"7csuro55"}
+{"time":"2025-03-17T15:19:03.6555227+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T15:33:47.217078+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T15:33:47.2194849+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T15:33:48.2418983+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.4144216,"progress":"740B/740B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.4144216,"progress":"251B/251B"},{"desc":"uploading config.yaml","runtime_seconds":0.1051678,"progress":"974B/974B"}],"total_operations":3}}
+{"time":"2025-03-17T15:33:48.4933264+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T15:33:49.8736744+05:30","level":"INFO","msg":"stream: closing","id":"7csuro55"}
+{"time":"2025-03-17T15:33:49.8736744+05:30","level":"INFO","msg":"handler: closed","stream_id":"7csuro55"}
+{"time":"2025-03-17T15:33:49.8736744+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"7csuro55"}
+{"time":"2025-03-17T15:33:49.8736744+05:30","level":"INFO","msg":"sender: closed","stream_id":"7csuro55"}
+{"time":"2025-03-17T15:33:49.8741921+05:30","level":"INFO","msg":"stream: closed","id":"7csuro55"}

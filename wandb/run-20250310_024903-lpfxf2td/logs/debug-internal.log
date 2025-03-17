@@ -1,0 +1,16 @@
+{"time":"2025-03-10T02:49:03.792165+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_024903-lpfxf2td\\logs\\debug-core.log"}
+{"time":"2025-03-10T02:49:03.9076235+05:30","level":"INFO","msg":"created new stream","id":"lpfxf2td"}
+{"time":"2025-03-10T02:49:03.9076235+05:30","level":"INFO","msg":"stream: started","id":"lpfxf2td"}
+{"time":"2025-03-10T02:49:03.9076235+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"lpfxf2td"}
+{"time":"2025-03-10T02:49:03.9076235+05:30","level":"INFO","msg":"sender: started","stream_id":"lpfxf2td"}
+{"time":"2025-03-10T02:49:03.9076235+05:30","level":"INFO","msg":"handler: started","stream_id":"lpfxf2td"}
+{"time":"2025-03-10T02:49:04.2673812+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T03:09:59.1189631+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T03:09:59.1196671+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T03:10:00.1308313+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3770818,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3770818,"progress":"241B/241B"},{"desc":"uploading config.yaml","runtime_seconds":0.0667832,"progress":"976B/976B"}],"total_operations":3}}
+{"time":"2025-03-10T03:10:01.1827401+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T03:10:02.5637306+05:30","level":"INFO","msg":"stream: closing","id":"lpfxf2td"}
+{"time":"2025-03-10T03:10:02.5637306+05:30","level":"INFO","msg":"handler: closed","stream_id":"lpfxf2td"}
+{"time":"2025-03-10T03:10:02.5637306+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"lpfxf2td"}
+{"time":"2025-03-10T03:10:02.5637306+05:30","level":"INFO","msg":"sender: closed","stream_id":"lpfxf2td"}
+{"time":"2025-03-10T03:10:02.564243+05:30","level":"INFO","msg":"stream: closed","id":"lpfxf2td"}

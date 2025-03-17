@@ -1,0 +1,16 @@
+{"time":"2025-03-10T13:38:40.5554206+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_133840-mjc28enr\\logs\\debug-core.log"}
+{"time":"2025-03-10T13:38:40.6753731+05:30","level":"INFO","msg":"created new stream","id":"mjc28enr"}
+{"time":"2025-03-10T13:38:40.6753731+05:30","level":"INFO","msg":"stream: started","id":"mjc28enr"}
+{"time":"2025-03-10T13:38:40.6769849+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"mjc28enr"}
+{"time":"2025-03-10T13:38:40.6769849+05:30","level":"INFO","msg":"sender: started","stream_id":"mjc28enr"}
+{"time":"2025-03-10T13:38:40.6769849+05:30","level":"INFO","msg":"handler: started","stream_id":"mjc28enr"}
+{"time":"2025-03-10T13:38:41.0396161+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T13:45:06.3151532+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T13:45:06.3173046+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T13:45:07.3206655+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3684512,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3684512,"progress":"239B/239B"},{"desc":"uploading config.yaml","runtime_seconds":0.0766321,"progress":"967B/967B"}],"total_operations":3}}
+{"time":"2025-03-10T13:45:07.6488516+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T13:45:09.268196+05:30","level":"INFO","msg":"stream: closing","id":"mjc28enr"}
+{"time":"2025-03-10T13:45:09.268196+05:30","level":"INFO","msg":"handler: closed","stream_id":"mjc28enr"}
+{"time":"2025-03-10T13:45:09.268196+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"mjc28enr"}
+{"time":"2025-03-10T13:45:09.268196+05:30","level":"INFO","msg":"sender: closed","stream_id":"mjc28enr"}
+{"time":"2025-03-10T13:45:09.2802044+05:30","level":"INFO","msg":"stream: closed","id":"mjc28enr"}

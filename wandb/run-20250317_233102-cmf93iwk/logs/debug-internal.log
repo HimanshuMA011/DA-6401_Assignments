@@ -1,0 +1,16 @@
+{"time":"2025-03-17T23:31:03.0218967+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250317_233102-cmf93iwk\\logs\\debug-core.log"}
+{"time":"2025-03-17T23:31:03.1348052+05:30","level":"INFO","msg":"created new stream","id":"cmf93iwk"}
+{"time":"2025-03-17T23:31:03.1348052+05:30","level":"INFO","msg":"stream: started","id":"cmf93iwk"}
+{"time":"2025-03-17T23:31:03.1348052+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"cmf93iwk"}
+{"time":"2025-03-17T23:31:03.1348052+05:30","level":"INFO","msg":"sender: started","stream_id":"cmf93iwk"}
+{"time":"2025-03-17T23:31:03.1353099+05:30","level":"INFO","msg":"handler: started","stream_id":"cmf93iwk"}
+{"time":"2025-03-17T23:31:03.6314671+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T23:31:04.2263511+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T23:31:04.2283566+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T23:31:05.2488312+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":0.2985271}],"total_operations":1}}
+{"time":"2025-03-17T23:31:05.9225867+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T23:31:07.2977999+05:30","level":"INFO","msg":"stream: closing","id":"cmf93iwk"}
+{"time":"2025-03-17T23:31:07.2977999+05:30","level":"INFO","msg":"handler: closed","stream_id":"cmf93iwk"}
+{"time":"2025-03-17T23:31:07.2977999+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"cmf93iwk"}
+{"time":"2025-03-17T23:31:07.3060091+05:30","level":"INFO","msg":"sender: closed","stream_id":"cmf93iwk"}
+{"time":"2025-03-17T23:31:07.3060091+05:30","level":"INFO","msg":"stream: closed","id":"cmf93iwk"}

@@ -1,0 +1,16 @@
+{"time":"2025-03-10T15:52:18.8371189+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_155218-i305irgu\\logs\\debug-core.log"}
+{"time":"2025-03-10T15:52:18.9510101+05:30","level":"INFO","msg":"created new stream","id":"i305irgu"}
+{"time":"2025-03-10T15:52:18.9510101+05:30","level":"INFO","msg":"stream: started","id":"i305irgu"}
+{"time":"2025-03-10T15:52:18.9510101+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"i305irgu"}
+{"time":"2025-03-10T15:52:18.9510101+05:30","level":"INFO","msg":"handler: started","stream_id":"i305irgu"}
+{"time":"2025-03-10T15:52:18.9510101+05:30","level":"INFO","msg":"sender: started","stream_id":"i305irgu"}
+{"time":"2025-03-10T15:52:19.3540425+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T15:57:09.5681796+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T15:57:09.5681796+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T15:57:10.5875334+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3982382,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3982382,"progress":"237B/237B"},{"desc":"uploading config.yaml","runtime_seconds":0.0654469,"progress":"969B/969B"}],"total_operations":3}}
+{"time":"2025-03-10T15:57:10.8798112+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T15:57:12.2311264+05:30","level":"INFO","msg":"stream: closing","id":"i305irgu"}
+{"time":"2025-03-10T15:57:12.2311264+05:30","level":"INFO","msg":"handler: closed","stream_id":"i305irgu"}
+{"time":"2025-03-10T15:57:12.2311264+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"i305irgu"}
+{"time":"2025-03-10T15:57:12.2311264+05:30","level":"INFO","msg":"sender: closed","stream_id":"i305irgu"}
+{"time":"2025-03-10T15:57:12.2317344+05:30","level":"INFO","msg":"stream: closed","id":"i305irgu"}

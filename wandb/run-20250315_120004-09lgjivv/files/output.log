@@ -1,0 +1,35 @@
+Epoch: 0, Loss: 5.904e-02, Training accuracy:0.838, Validation Loss: 4.637e-02, Validation Accuracy: 0.834, Time: 430.736, Learning Rate: 1.000e-04
+Epoch: 1, Loss: 4.108e-02, Training accuracy:0.857, Validation Loss: 4.130e-02, Validation Accuracy: 0.853, Time: 104.462, Learning Rate: 1.000e-04
+Epoch: 2, Loss: 3.728e-02, Training accuracy:0.868, Validation Loss: 3.878e-02, Validation Accuracy: 0.862, Time: 103.950, Learning Rate: 1.000e-04
+Epoch: 3, Loss: 3.498e-02, Training accuracy:0.875, Validation Loss: 3.726e-02, Validation Accuracy: 0.869, Time: 116.891, Learning Rate: 1.000e-04
+Epoch: 4, Loss: 3.329e-02, Training accuracy:0.881, Validation Loss: 3.628e-02, Validation Accuracy: 0.870, Time: 114.886, Learning Rate: 1.000e-04
+Epoch: 5, Loss: 3.199e-02, Training accuracy:0.885, Validation Loss: 3.554e-02, Validation Accuracy: 0.871, Time: 94.861, Learning Rate: 1.000e-04
+Epoch: 6, Loss: 3.087e-02, Training accuracy:0.887, Validation Loss: 3.507e-02, Validation Accuracy: 0.873, Time: 99.803, Learning Rate: 1.000e-04
+Epoch: 7, Loss: 2.993e-02, Training accuracy:0.890, Validation Loss: 3.468e-02, Validation Accuracy: 0.875, Time: 99.370, Learning Rate: 1.000e-04
+Epoch: 8, Loss: 2.910e-02, Training accuracy:0.893, Validation Loss: 3.430e-02, Validation Accuracy: 0.877, Time: 100.804, Learning Rate: 1.000e-04
+Epoch: 9, Loss: 2.834e-02, Training accuracy:0.896, Validation Loss: 3.406e-02, Validation Accuracy: 0.877, Time: 97.817, Learning Rate: 1.000e-04
+Epoch: 0, Loss: 6.064e-02, Training accuracy:0.830, Validation Loss: 4.783e-02, Validation Accuracy: 0.828, Time: 86.725, Learning Rate: 1.000e-04
+Epoch: 1, Loss: 4.245e-02, Training accuracy:0.856, Validation Loss: 4.179e-02, Validation Accuracy: 0.853, Time: 89.947, Learning Rate: 1.000e-04
+Epoch: 2, Loss: 3.863e-02, Training accuracy:0.868, Validation Loss: 3.878e-02, Validation Accuracy: 0.862, Time: 90.070, Learning Rate: 1.000e-04
+Epoch: 3, Loss: 3.629e-02, Training accuracy:0.876, Validation Loss: 3.695e-02, Validation Accuracy: 0.869, Time: 88.116, Learning Rate: 1.000e-04
+Epoch: 4, Loss: 3.456e-02, Training accuracy:0.880, Validation Loss: 3.580e-02, Validation Accuracy: 0.874, Time: 82.112, Learning Rate: 1.000e-04
+Epoch: 5, Loss: 3.320e-02, Training accuracy:0.884, Validation Loss: 3.485e-02, Validation Accuracy: 0.877, Time: 83.057, Learning Rate: 1.000e-04
+Epoch: 6, Loss: 3.205e-02, Training accuracy:0.888, Validation Loss: 3.415e-02, Validation Accuracy: 0.878, Time: 89.207, Learning Rate: 1.000e-04
+Epoch: 7, Loss: 3.107e-02, Training accuracy:0.891, Validation Loss: 3.364e-02, Validation Accuracy: 0.881, Time: 89.570, Learning Rate: 1.000e-04
+Epoch: 8, Loss: 3.021e-02, Training accuracy:0.894, Validation Loss: 3.322e-02, Validation Accuracy: 0.883, Time: 96.005, Learning Rate: 1.000e-04
+Epoch: 9, Loss: 2.941e-02, Training accuracy:0.895, Validation Loss: 3.295e-02, Validation Accuracy: 0.883, Time: 88.991, Learning Rate: 1.000e-04
+Epoch: 10, Loss: 2.870e-02, Training accuracy:0.898, Validation Loss: 3.256e-02, Validation Accuracy: 0.883, Time: 93.664, Learning Rate: 1.000e-04
+Epoch: 11, Loss: 2.805e-02, Training accuracy:0.900, Validation Loss: 3.245e-02, Validation Accuracy: 0.884, Time: 89.211, Learning Rate: 1.000e-04
+Epoch: 12, Loss: 2.742e-02, Training accuracy:0.902, Validation Loss: 3.221e-02, Validation Accuracy: 0.885, Time: 88.818, Learning Rate: 1.000e-04
+Epoch: 13, Loss: 2.685e-02, Training accuracy:0.903, Validation Loss: 3.201e-02, Validation Accuracy: 0.887, Time: 84.547, Learning Rate: 1.000e-04
+Epoch: 14, Loss: 2.632e-02, Training accuracy:0.905, Validation Loss: 3.192e-02, Validation Accuracy: 0.886, Time: 86.997, Learning Rate: 1.000e-04
+Epoch: 15, Loss: 2.579e-02, Training accuracy:0.907, Validation Loss: 3.173e-02, Validation Accuracy: 0.888, Time: 132.416, Learning Rate: 1.000e-04
+Epoch: 16, Loss: 2.527e-02, Training accuracy:0.908, Validation Loss: 3.165e-02, Validation Accuracy: 0.887, Time: 104.696, Learning Rate: 1.000e-04
+Epoch: 17, Loss: 2.478e-02, Training accuracy:0.910, Validation Loss: 3.150e-02, Validation Accuracy: 0.888, Time: 90.612, Learning Rate: 1.000e-04
+Epoch: 18, Loss: 2.430e-02, Training accuracy:0.911, Validation Loss: 3.145e-02, Validation Accuracy: 0.887, Time: 88.266, Learning Rate: 1.000e-04
+Epoch: 19, Loss: 2.384e-02, Training accuracy:0.914, Validation Loss: 3.137e-02, Validation Accuracy: 0.887, Time: 88.128, Learning Rate: 1.000e-04
+[34m[1mwandb[0m: [33mWARNING[0m Fatal error while uploading data. Some run data will not be synced, but it will still be written to disk. Use `wandb sync` at the end of the run to try uploading.
+Create sweep with ID: 50q1df1l
+Sweep URL: https://wandb.ai/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/sweeps/50q1df1l
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
+[1m11490434/11490434[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 0us/step

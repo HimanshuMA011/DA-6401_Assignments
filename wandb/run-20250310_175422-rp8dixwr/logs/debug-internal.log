@@ -1,0 +1,16 @@
+{"time":"2025-03-10T17:54:22.4954282+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_175422-rp8dixwr\\logs\\debug-core.log"}
+{"time":"2025-03-10T17:54:22.6111885+05:30","level":"INFO","msg":"created new stream","id":"rp8dixwr"}
+{"time":"2025-03-10T17:54:22.6111885+05:30","level":"INFO","msg":"stream: started","id":"rp8dixwr"}
+{"time":"2025-03-10T17:54:22.6116474+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"rp8dixwr"}
+{"time":"2025-03-10T17:54:22.6116474+05:30","level":"INFO","msg":"sender: started","stream_id":"rp8dixwr"}
+{"time":"2025-03-10T17:54:22.6116474+05:30","level":"INFO","msg":"handler: started","stream_id":"rp8dixwr"}
+{"time":"2025-03-10T17:54:23.0342758+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T18:00:58.8553534+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T18:00:58.8553534+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T18:00:59.8653961+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3989639,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3989639,"progress":"238B/238B"},{"desc":"uploading config.yaml","runtime_seconds":0.0982657,"progress":"973B/973B"}],"total_operations":3}}
+{"time":"2025-03-10T18:01:00.1968118+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T18:01:01.5697651+05:30","level":"INFO","msg":"stream: closing","id":"rp8dixwr"}
+{"time":"2025-03-10T18:01:01.5697651+05:30","level":"INFO","msg":"handler: closed","stream_id":"rp8dixwr"}
+{"time":"2025-03-10T18:01:01.5697651+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"rp8dixwr"}
+{"time":"2025-03-10T18:01:01.5697651+05:30","level":"INFO","msg":"sender: closed","stream_id":"rp8dixwr"}
+{"time":"2025-03-10T18:01:01.5702786+05:30","level":"INFO","msg":"stream: closed","id":"rp8dixwr"}

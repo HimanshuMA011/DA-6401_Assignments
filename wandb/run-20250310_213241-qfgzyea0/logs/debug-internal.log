@@ -1,0 +1,16 @@
+{"time":"2025-03-10T21:32:41.4580546+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_213241-qfgzyea0\\logs\\debug-core.log"}
+{"time":"2025-03-10T21:32:41.574283+05:30","level":"INFO","msg":"created new stream","id":"qfgzyea0"}
+{"time":"2025-03-10T21:32:41.574395+05:30","level":"INFO","msg":"stream: started","id":"qfgzyea0"}
+{"time":"2025-03-10T21:32:41.574395+05:30","level":"INFO","msg":"handler: started","stream_id":"qfgzyea0"}
+{"time":"2025-03-10T21:32:41.574395+05:30","level":"INFO","msg":"sender: started","stream_id":"qfgzyea0"}
+{"time":"2025-03-10T21:32:41.574395+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"qfgzyea0"}
+{"time":"2025-03-10T21:32:42.0247036+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T21:39:09.8205084+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T21:39:09.8210742+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T21:39:10.8420859+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.4080956,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.4080956,"progress":"252B/252B"},{"desc":"uploading config.yaml","runtime_seconds":0.0970849,"progress":"968B/968B"}],"total_operations":3}}
+{"time":"2025-03-10T21:39:11.1175599+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T21:39:12.50559+05:30","level":"INFO","msg":"stream: closing","id":"qfgzyea0"}
+{"time":"2025-03-10T21:39:12.50559+05:30","level":"INFO","msg":"handler: closed","stream_id":"qfgzyea0"}
+{"time":"2025-03-10T21:39:12.50559+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"qfgzyea0"}
+{"time":"2025-03-10T21:39:12.5060998+05:30","level":"INFO","msg":"sender: closed","stream_id":"qfgzyea0"}
+{"time":"2025-03-10T21:39:12.5060998+05:30","level":"INFO","msg":"stream: closed","id":"qfgzyea0"}

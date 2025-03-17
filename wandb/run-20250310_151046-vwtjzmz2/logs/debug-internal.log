@@ -1,0 +1,16 @@
+{"time":"2025-03-10T15:10:46.5417725+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_151046-vwtjzmz2\\logs\\debug-core.log"}
+{"time":"2025-03-10T15:10:46.6517731+05:30","level":"INFO","msg":"created new stream","id":"vwtjzmz2"}
+{"time":"2025-03-10T15:10:46.6517731+05:30","level":"INFO","msg":"stream: started","id":"vwtjzmz2"}
+{"time":"2025-03-10T15:10:46.6517731+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"vwtjzmz2"}
+{"time":"2025-03-10T15:10:46.6517731+05:30","level":"INFO","msg":"sender: started","stream_id":"vwtjzmz2"}
+{"time":"2025-03-10T15:10:46.6522815+05:30","level":"INFO","msg":"handler: started","stream_id":"vwtjzmz2"}
+{"time":"2025-03-10T15:10:47.3040825+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T15:28:42.1301726+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T15:28:42.1306773+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T15:28:43.1452796+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3847517,"progress":"2.0KB/2.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3847517,"progress":"209B/209B"},{"desc":"uploading config.yaml","runtime_seconds":0.0713281,"progress":"973B/973B"}],"total_operations":3}}
+{"time":"2025-03-10T15:28:43.4483203+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T15:28:44.8229025+05:30","level":"INFO","msg":"stream: closing","id":"vwtjzmz2"}
+{"time":"2025-03-10T15:28:44.8229025+05:30","level":"INFO","msg":"handler: closed","stream_id":"vwtjzmz2"}
+{"time":"2025-03-10T15:28:44.8229025+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"vwtjzmz2"}
+{"time":"2025-03-10T15:28:44.8229025+05:30","level":"INFO","msg":"sender: closed","stream_id":"vwtjzmz2"}
+{"time":"2025-03-10T15:28:44.8234184+05:30","level":"INFO","msg":"stream: closed","id":"vwtjzmz2"}

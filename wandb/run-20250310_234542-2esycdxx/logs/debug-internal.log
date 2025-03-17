@@ -1,0 +1,18 @@
+{"time":"2025-03-10T23:45:42.141583+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_234542-2esycdxx\\logs\\debug-core.log"}
+{"time":"2025-03-10T23:45:42.2540237+05:30","level":"INFO","msg":"created new stream","id":"2esycdxx"}
+{"time":"2025-03-10T23:45:42.2543338+05:30","level":"INFO","msg":"stream: started","id":"2esycdxx"}
+{"time":"2025-03-10T23:45:42.2543338+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"2esycdxx"}
+{"time":"2025-03-10T23:45:42.2543338+05:30","level":"INFO","msg":"sender: started","stream_id":"2esycdxx"}
+{"time":"2025-03-10T23:45:42.2543338+05:30","level":"INFO","msg":"handler: started","stream_id":"2esycdxx"}
+{"time":"2025-03-10T23:45:42.692707+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T23:48:18.9331203+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/2esycdxx/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-03-10T23:48:26.6636798+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/2esycdxx/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-03-10T23:51:00.5613028+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T23:51:00.5623213+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T23:51:01.5728003+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.2716596,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.2716596,"progress":"238B/238B"}],"total_operations":2}}
+{"time":"2025-03-10T23:51:02.1061199+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T23:51:03.5427772+05:30","level":"INFO","msg":"stream: closing","id":"2esycdxx"}
+{"time":"2025-03-10T23:51:03.5553346+05:30","level":"INFO","msg":"handler: closed","stream_id":"2esycdxx"}
+{"time":"2025-03-10T23:51:03.5553346+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"2esycdxx"}
+{"time":"2025-03-10T23:51:03.5553346+05:30","level":"INFO","msg":"sender: closed","stream_id":"2esycdxx"}
+{"time":"2025-03-10T23:51:03.5556339+05:30","level":"INFO","msg":"stream: closed","id":"2esycdxx"}

@@ -1,0 +1,11 @@
+Epoch: 0, Loss: 7.538e-02, Training accuracy:0.822, Validation Loss: 5.255e-02, Validation Accuracy: 0.815, Time: 21.110, Learning Rate: 1.000e-03
+Epoch: 1, Loss: 4.888e-02, Training accuracy:0.840, Validation Loss: 4.738e-02, Validation Accuracy: 0.838, Time: 22.722, Learning Rate: 1.000e-03
+Epoch: 2, Loss: 4.378e-02, Training accuracy:0.849, Validation Loss: 4.505e-02, Validation Accuracy: 0.844, Time: 23.128, Learning Rate: 1.000e-03
+Epoch: 3, Loss: 4.086e-02, Training accuracy:0.857, Validation Loss: 4.316e-02, Validation Accuracy: 0.852, Time: 22.455, Learning Rate: 1.000e-03
+Epoch: 4, Loss: 3.889e-02, Training accuracy:0.866, Validation Loss: 4.119e-02, Validation Accuracy: 0.857, Time: 22.582, Learning Rate: 1.000e-03
+[34m[1mwandb[0m: Network error (ConnectTimeout), entering retry loop.
+Epoch: 5, Loss: 3.737e-02, Training accuracy:0.869, Validation Loss: 4.020e-02, Validation Accuracy: 0.860, Time: 24.382, Learning Rate: 1.000e-03
+Epoch: 6, Loss: 3.614e-02, Training accuracy:0.873, Validation Loss: 3.929e-02, Validation Accuracy: 0.864, Time: 25.756, Learning Rate: 1.000e-03
+Epoch: 7, Loss: 3.504e-02, Training accuracy:0.876, Validation Loss: 3.870e-02, Validation Accuracy: 0.865, Time: 24.347, Learning Rate: 1.000e-03
+Epoch: 8, Loss: 3.413e-02, Training accuracy:0.881, Validation Loss: 3.747e-02, Validation Accuracy: 0.870, Time: 24.923, Learning Rate: 1.000e-03
+Epoch: 9, Loss: 3.337e-02, Training accuracy:0.883, Validation Loss: 3.704e-02, Validation Accuracy: 0.872, Time: 24.061, Learning Rate: 1.000e-03

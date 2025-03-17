@@ -1,0 +1,16 @@
+{"time":"2025-03-10T02:25:45.6421495+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_022545-krdvtob2\\logs\\debug-core.log"}
+{"time":"2025-03-10T02:25:45.7530237+05:30","level":"INFO","msg":"created new stream","id":"krdvtob2"}
+{"time":"2025-03-10T02:25:45.7531549+05:30","level":"INFO","msg":"stream: started","id":"krdvtob2"}
+{"time":"2025-03-10T02:25:45.7531549+05:30","level":"INFO","msg":"handler: started","stream_id":"krdvtob2"}
+{"time":"2025-03-10T02:25:45.7531549+05:30","level":"INFO","msg":"sender: started","stream_id":"krdvtob2"}
+{"time":"2025-03-10T02:25:45.7531549+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"krdvtob2"}
+{"time":"2025-03-10T02:25:46.1489948+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T02:33:20.0504857+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T02:33:20.0509962+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T02:33:21.0617455+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.4210704,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.4210704,"progress":"239B/239B"},{"desc":"uploading config.yaml","runtime_seconds":0.116519,"progress":"974B/974B"}],"total_operations":3}}
+{"time":"2025-03-10T02:33:22.0815014+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T02:33:23.4612421+05:30","level":"INFO","msg":"stream: closing","id":"krdvtob2"}
+{"time":"2025-03-10T02:33:23.4612421+05:30","level":"INFO","msg":"handler: closed","stream_id":"krdvtob2"}
+{"time":"2025-03-10T02:33:23.4612421+05:30","level":"INFO","msg":"sender: closed","stream_id":"krdvtob2"}
+{"time":"2025-03-10T02:33:23.4612421+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"krdvtob2"}
+{"time":"2025-03-10T02:33:23.4618787+05:30","level":"INFO","msg":"stream: closed","id":"krdvtob2"}

@@ -1,0 +1,7 @@
+{"time":"2025-03-10T05:30:32.8674661+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_053032-u486b1lk\\logs\\debug-core.log"}
+{"time":"2025-03-10T05:30:33.0017362+05:30","level":"INFO","msg":"created new stream","id":"u486b1lk"}
+{"time":"2025-03-10T05:30:33.0017362+05:30","level":"INFO","msg":"stream: started","id":"u486b1lk"}
+{"time":"2025-03-10T05:30:33.0017362+05:30","level":"INFO","msg":"handler: started","stream_id":"u486b1lk"}
+{"time":"2025-03-10T05:30:33.0022458+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"u486b1lk"}
+{"time":"2025-03-10T05:30:33.0023492+05:30","level":"INFO","msg":"sender: started","stream_id":"u486b1lk"}
+{"time":"2025-03-10T05:30:33.3825199+05:30","level":"INFO","msg":"Starting system monitor"}

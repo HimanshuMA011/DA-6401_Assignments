@@ -1,0 +1,16 @@
+{"time":"2025-03-10T09:48:10.7551148+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_094810-aeryv19n\\logs\\debug-core.log"}
+{"time":"2025-03-10T09:48:10.8635304+05:30","level":"INFO","msg":"created new stream","id":"aeryv19n"}
+{"time":"2025-03-10T09:48:10.8640598+05:30","level":"INFO","msg":"stream: started","id":"aeryv19n"}
+{"time":"2025-03-10T09:48:10.8640598+05:30","level":"INFO","msg":"sender: started","stream_id":"aeryv19n"}
+{"time":"2025-03-10T09:48:10.8640598+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"aeryv19n"}
+{"time":"2025-03-10T09:48:10.8644228+05:30","level":"INFO","msg":"handler: started","stream_id":"aeryv19n"}
+{"time":"2025-03-10T09:48:11.2435901+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T10:10:19.6210048+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T10:10:19.6217543+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T10:10:20.629002+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3897401,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3897401,"progress":"251B/251B"},{"desc":"uploading config.yaml","runtime_seconds":0.0723135,"progress":"966B/966B"}],"total_operations":3}}
+{"time":"2025-03-10T10:10:20.9140709+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T10:10:22.2864798+05:30","level":"INFO","msg":"stream: closing","id":"aeryv19n"}
+{"time":"2025-03-10T10:10:22.2864798+05:30","level":"INFO","msg":"handler: closed","stream_id":"aeryv19n"}
+{"time":"2025-03-10T10:10:22.2864798+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"aeryv19n"}
+{"time":"2025-03-10T10:10:22.2864798+05:30","level":"INFO","msg":"sender: closed","stream_id":"aeryv19n"}
+{"time":"2025-03-10T10:10:22.2871326+05:30","level":"INFO","msg":"stream: closed","id":"aeryv19n"}

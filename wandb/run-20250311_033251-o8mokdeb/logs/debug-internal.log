@@ -1,0 +1,16 @@
+{"time":"2025-03-11T03:32:51.3748282+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250311_033251-o8mokdeb\\logs\\debug-core.log"}
+{"time":"2025-03-11T03:32:51.4910962+05:30","level":"INFO","msg":"created new stream","id":"o8mokdeb"}
+{"time":"2025-03-11T03:32:51.4910962+05:30","level":"INFO","msg":"stream: started","id":"o8mokdeb"}
+{"time":"2025-03-11T03:32:51.4910962+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"o8mokdeb"}
+{"time":"2025-03-11T03:32:51.4910962+05:30","level":"INFO","msg":"handler: started","stream_id":"o8mokdeb"}
+{"time":"2025-03-11T03:32:51.4910962+05:30","level":"INFO","msg":"sender: started","stream_id":"o8mokdeb"}
+{"time":"2025-03-11T03:32:51.8788222+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-11T03:42:27.9352921+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-11T03:42:27.9384713+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-11T03:42:28.9487516+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.4015981,"progress":"735B/735B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.4015981,"progress":"248B/248B"},{"desc":"uploading config.yaml","runtime_seconds":0.0984753,"progress":"971B/971B"}],"total_operations":3}}
+{"time":"2025-03-11T03:42:30.0744993+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-11T03:42:31.4564382+05:30","level":"INFO","msg":"stream: closing","id":"o8mokdeb"}
+{"time":"2025-03-11T03:42:31.4566213+05:30","level":"INFO","msg":"handler: closed","stream_id":"o8mokdeb"}
+{"time":"2025-03-11T03:42:31.4566213+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"o8mokdeb"}
+{"time":"2025-03-11T03:42:31.4566213+05:30","level":"INFO","msg":"sender: closed","stream_id":"o8mokdeb"}
+{"time":"2025-03-11T03:42:31.4568318+05:30","level":"INFO","msg":"stream: closed","id":"o8mokdeb"}

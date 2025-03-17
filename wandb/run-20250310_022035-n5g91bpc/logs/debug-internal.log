@@ -1,0 +1,17 @@
+{"time":"2025-03-10T02:20:35.3704938+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7.dev1","symlink path":"c:\\Users\\himan\\Documents\\GitHub\\DA-6401_Assignments\\wandb\\run-20250310_022035-n5g91bpc\\logs\\debug-core.log"}
+{"time":"2025-03-10T02:20:35.4955746+05:30","level":"INFO","msg":"created new stream","id":"n5g91bpc"}
+{"time":"2025-03-10T02:20:35.4955746+05:30","level":"INFO","msg":"stream: started","id":"n5g91bpc"}
+{"time":"2025-03-10T02:20:35.4955746+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"n5g91bpc"}
+{"time":"2025-03-10T02:20:35.4955746+05:30","level":"INFO","msg":"handler: started","stream_id":"n5g91bpc"}
+{"time":"2025-03-10T02:20:35.4960825+05:30","level":"INFO","msg":"sender: started","stream_id":"n5g91bpc"}
+{"time":"2025-03-10T02:20:35.8607033+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T02:25:00.9988216+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ma23c011-indian-institute-of-technology-madras/fashion-mnist-visualization/n5g91bpc/file_stream\": unexpected EOF"}
+{"time":"2025-03-10T02:25:40.3105969+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T02:25:40.3112214+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T02:25:41.3214042+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3839652,"progress":"1.4KB/1.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3839652,"progress":"235B/235B"},{"desc":"uploading config.yaml","runtime_seconds":0.1056256,"progress":"968B/968B"}],"total_operations":3}}
+{"time":"2025-03-10T02:25:42.323695+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T02:25:43.7262878+05:30","level":"INFO","msg":"stream: closing","id":"n5g91bpc"}
+{"time":"2025-03-10T02:25:43.7262878+05:30","level":"INFO","msg":"handler: closed","stream_id":"n5g91bpc"}
+{"time":"2025-03-10T02:25:43.7262878+05:30","level":"INFO","msg":"sender: closed","stream_id":"n5g91bpc"}
+{"time":"2025-03-10T02:25:43.7262878+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"n5g91bpc"}
+{"time":"2025-03-10T02:25:43.7268133+05:30","level":"INFO","msg":"stream: closed","id":"n5g91bpc"}
