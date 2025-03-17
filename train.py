@@ -88,7 +88,6 @@ def train():
     
     training_loss, training_accuracy, validation_loss, validation_accuracy, Y_pred = FFNN.optimizer(FFNN.max_epochs, FFNN.N_train, 
                                                                                                     FFNN.batch_size, FFNN.learning_rate)
-    print(f"Accuracy & Loss on training data is {training_accuracy[FFNN.max_epochs-1]} & {training_loss[FFNN.max_epochs-1]} and Accuracy & Loss on validation data is {validation_accuracy[FFNN.max_epochs-1]} & {validation_loss[FFNN.max_epochs-1]}")
     Y_test_pred = FFNN.predict(FFNN.test_In,FFNN.N_test)
     testing_accuracy = FFNN.accuracy(FFNN.Y_test,Y_test_pred,FFNN.N_test)
     print(f"Accuracy on testing data is {testing_accuracy[0]}")
